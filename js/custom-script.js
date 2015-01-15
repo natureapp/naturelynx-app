@@ -1,11 +1,28 @@
 // JavaScript Document
 
+
+
 jQuery(document).ready(function($) {
   
+	//discover block height
+	var half_height = ($(window).height()-92 )/2;
+	$('.discover-block').css("min-height", half_height);
+	var img_height = $('.bg-green').outerHeight();
+	$('.discover-img-green img').css("height", img_height);
+	var img_height = $('.bg-yellow').outerHeight();
+	$('.discover-img-yellow img').css("height", img_height);
+	
 	
 	//Set min height as window height
 	var page_height = $(window).height();
 	$('.landingpage').css("min-height", page_height);
+	
+	
+	//searchpage
+	var page_view = $(window).height()-92;
+	$('.search-page iframe').css("min-height", page_view);
+
+	
 	
 	//Comments Show / Hide 
 	$( "#total-comments" ).click(function() {
@@ -14,13 +31,8 @@ jQuery(document).ready(function($) {
   		
 	});
 	
-	//discover block height
-	var half_height = ($(window).height()-92 )/2;
-	$('.discover-block').css("min-height", half_height);
-	var img_height = $('.bg-green').outerHeight();
-	$('.discover-img-green img').css("height", img_height);
-	var img_height = $('.bg-yellow').outerHeight();
-	$('.discover-img-yellow img').css("height", img_height);
+	
+	
 	//Mysightings List view/ Grid View
 	$( ".list-view-btn" ).click(function() {
 		$(".sightings-list").removeClass("grid-view");
@@ -129,6 +141,40 @@ jQuery(document).ready(function($) {
 	});
 	
 });
+
+
+//Search filter
+(function ($) {
+  jQuery.expr[':'].Contains = function(a,i,m){
+      return (a.textContent || a.innerText || "").toUpperCase().indexOf(m[3].toUpperCase())>=0;
+  };
+ 
+  function live_search(list) {
+ 
+    $(".filterinput")
+      .change( function () {
+        var searchtext = $(this).val();
+	
+        if(searchtext) {
+ 
+          $matches = $(list).find('a:Contains(' + searchtext + ')').parent();
+          $('li', list).not($matches).slideUp();
+          $matches.slideDown();
+ 
+        } else {
+		  $(list).find("li").slideDown(200);
+        }
+        return false;
+      })
+    .keyup( function () {
+        $(this).change();
+    });
+  }
+ 
+  $(function () {
+    live_search($("#contents"));
+  });
+}(jQuery));
 
 $( window ).resize(function() {
 	// Ser footer at bottom position
