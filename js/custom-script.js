@@ -3,7 +3,10 @@
 
 
 jQuery(document).ready(function($) {
-  
+ 
+
+
+  	
 	//discover block height
 	var half_height = ($(window).height()-92 )/2;
 	$('.discover-block').css("min-height", half_height);
@@ -140,6 +143,39 @@ jQuery(document).ready(function($) {
 	});
 	});
 	
+	
+	//Slide left and open 
+  	function showPage(topage, frompage) {
+		var pageWidth = frompage.width();
+		topage.css("left", pageWidth);
+		topage.addClass("active-page");
+		topage.add(frompage).animate({
+			"left": "-=" + pageWidth + "px"
+		}, 300).promise().done(function() {
+			frompage.removeClass('active-page');
+		});
+	}
+	var pageone = $("#tools-page");
+	$("a#goto-notifications").click(function(e) {
+		e.preventDefault();
+		var frompage = $(".tools-page"),
+			topage = frompage.siblings();
+		showPage(topage,frompage);
+	});
+	
+	//slide page top & bottom padding
+	var appnav_height = $(".app-nav").outerHeight();
+	$('.slide-page').css("padding-top", appnav_height);
+	var bottommenu_height = $(".bottom-menu").outerHeight();
+	$('.slide-page').css("padding-bottom", bottommenu_height);
+	
+	
+	//Edit profile picture size
+	/*var colwidth = $(".profile-pic").width();
+	$('.profile-pic').css("height", colwidth);
+	$('.profile-pic img').css("height", colwidth);
+	$('.profile-banner').css("height", colwidth);
+	$('.profile-banner img').css("height", "100%");*/
 });
 
 

@@ -16,7 +16,10 @@ body{
 a, a:hover, a:focus, button{
 	outline:none;
 	text-decoration:none;
-	
+}
+input, input:focus, input:hover, textarea:focus, textarea:hover, select:focus, button:focus{
+	outline:none;
+	border:none;
 }
 .top-menu-temp{
 	padding-top:44px;
@@ -39,6 +42,13 @@ input, select, textarea{
 	-webkit-border-radius: 0;
 	-o-border-radius: 0;
 	-ms-border-radius: 0;
+	border:none;
+}
+.mrg-btn10{
+	margin-bottom:10px;
+}
+.mrg-btn20{
+	margin-bottom:20px;
 }
 /*************************************************************/
 /*	Landing Page
@@ -394,7 +404,23 @@ input, select, textarea{
 	font-family: 'ralewaylight';
 	font-size:11px;
 }
-
+.add-comment{
+	padding: 20px 0px 0px;
+}
+#commnet-area input.cooment-box{
+	color: #292934;
+	font-size: 11px;
+	padding: 6px 10px;
+	width:100%;
+	border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	-o-border-radius: 0;
+	-ms-border-radius: 0;
+}
+#commnet-area .line-style-btn{
+	width:100%;
+}
 /*************************************************************/
 /*	Filter By
 /*************************************************************/
@@ -683,11 +709,7 @@ input, select, textarea{
 	color:#292934;
 	padding-top: 15px;
 }
-input, input:focus, input:hover{
-	outline:none;
-	border:none;
-}
-.capture-lable-form input, .capture-lable-form .group-select-btn{
+.form input, .form .group-select-btn, .form select, .form textarea{
 	color:#292934;
 	text-transform:uppercase;
 	font-size:11px;
@@ -699,9 +721,6 @@ input, input:focus, input:hover{
 	-webkit-border-radius: 0;
 	-o-border-radius: 0;
 	-ms-border-radius: 0;
-}
-.mrg-btn10{
-	margin-bottom:10px;
 }
 .full-block{
 	display:inline-block;
@@ -882,16 +901,16 @@ font-weight:normal;
 }
 .backto-capturelabel{
 	background:url(../images/left-arrow.svg) no-repeat 15px center;
-	background-size:auto 12px;
+	background-size:auto 20px;
 	position: absolute;
 	left: 0px;
 	top: 0px;
 	width: 50px;
 	height:100%;
+	cursor: pointer;
 }
 .select-group-title{
 	color:#fff;
-	font-size:12px;
 	font-family: 'ralewaybold';
 	padding:35px 15px; 
 	text-align:center;
@@ -926,7 +945,37 @@ font-weight:normal;
 	background:#D58812;
 	color:#fff;
 }
-
+/*************************************************************/
+/* Species Group
+/*************************************************************/
+.species-group{
+	background:#2A2935;
+}
+/*************************************************************/
+/*	Create Group
+/*************************************************************/
+.create-group-title{
+	color:#4B4B4B;
+	margin: 0px;
+	font-family: 'ralewaybold';
+	padding: 25px 15px;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+.info-txt{
+	text-align:center;
+	font-family: 'ralewayregular';
+	font-size:10px;
+	margin-top:5px;
+}
+.info-txt strong{
+	font-family: 'ralewaysemibold';
+}
+.create-group hr{
+	margin:0px;
+	border-top: 1px solid #E2E2E2;
+}
 /*************************************************************/
 /*	Discover
 /*************************************************************/
@@ -1179,7 +1228,6 @@ h3.font-style1{
 	min-height:115px;
 }
 .group-logo, .profile-pic{
-	background:#2A2935;
 	width:115px;
 	height:115px;
 	border-radius:50%;
@@ -1192,6 +1240,12 @@ h3.font-style1{
 	position: relative;
 	z-index: 1;
 	margin: 0px auto;
+	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.15);
+	-webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.15);
+	-moz-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.15);
+	-ms-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.15);
+	-o-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.15);
+	background:#fff;
 }
 .group-logo img.grouplogopng{
 	max-width: 65px;
@@ -1323,21 +1377,154 @@ h3.font-style1{
 }
 .profile-page .edit-icon{
 	background:url(../images/edit-icon2.svg) no-repeat;
+	background-size:22px auto;
+	background-position:0px 0px;
 }
 .profile-page .setting-icon{
 	background:url(../images/settings-icon2.svg) no-repeat;
+	background-size:22px auto;
+	background-position:0px 0px;
+}
+.profile-page .edit-icon:hover, .profile-page .edit-icon:focus{
+	background:url(../images/edit-icon2.svg) no-repeat;
+	background-size:22px auto;
+	background-position:0px -22px;
+}
+.profile-page .setting-icon:hover, .profile-page .setting-icon:focus {
+	background:url(../images/settings-icon2.svg) no-repeat;
+	background-size:22px auto;
+	background-position:0px -22px;
 }
 .profile-page .link-icons-group {
 	margin: 0px 15px 0px;
 	text-align:right;
 }
 /*************************************************************/
+/*	Edit Profile page
+/*************************************************************/
+.title-style1{
+	color: #4B4B4B;
+	margin: 0px;
+	font-family: 'ralewaybold';
+	padding: 25px 15px;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+ .edit-profile-page .list-style li a{
+	padding: 7px 15px 6px;
+	display: block;
+	text-align: left;
+	font-family: 'ralewaysemibold';
+	text-transform:uppercase;
+	font-size:12px;
+	display: inline-block;
+	width: 100%;
+	line-height: 25px;
+}
+.edit-profile-page .list-style li:first-child{
+	border-top: 1px solid #AEAEAE;
+}
+.puch-btn{
+	width:90px;
+	float:right;
+}
+.edit-profile-page .push-btn-label{
+	padding: 11px 15px 6px;
+	text-align: left;
+	font-family: 'ralewaysemibold';
+	text-transform:uppercase;
+	font-size:12px;
+	float: left;
+}
+.edit-profile-page .switch{
+	margin-bottom:0px;
+}
+.push-notifications{
+	border-top: 1px solid #AEAEAE;
+}
+.edit-profile-page .form input, .edit-profile-page  .form .group-select-btn, .edit-profile-page .form textarea{
+	text-transform:none;
+	text-align:left;
+}
+.edit-profile-page .form textarea{
+	height:93px !important;
+	max-width:100%;
+}
+.input-password{
+	position:relative;
+	padding-left:50px;
+}
+.input-password:before{
+	content:'Passowrd: ';
+	position:relative;
+}
+.edit-profile-page .form .line-style-btn{
+	text-align:center;
+	width:100px;
+	margin-top:20px;
+	text-transform: uppercase;
+}
+.edit-profile-page .save-btn{
+	float: right;
+}
+.padding-left0{
+	padding-left:0px;
+}
+.padding-left5{
+	padding-left:5px;
+}
+.padding-right5{
+	padding-right:5px;
+}
+.edit-profile-page .profile-pic{
+	box-shadow:none;
+	width: 95px;
+	height: 95px;
+}
+.profile-banner{
+	overflow:hidden;
+	height: 95px;
+}
+.profile-banner img{
+	min-width:100%;
+}
+.edit-img-sec{
+	text-align:center;
+}
+.edit-img-sec a{
+	text-align:center;
+	color:#292934;
+	font-family: 'ralewaylight';
+	margin-top:10px;
+	font-size:11px;
+	display:block;
+}
+.edit-profile-page label{
+	text-align: center;
+	color: #292934;
+	font-family: 'ralewaylight';
+	margin:3px auto 5px;
+	font-size: 11px;
+	display: block;
+}
+/*************************************************************/
 /*	Tools page
 /*************************************************************/
 .tools-page .list-style li a{
-	padding: 7px 15px;
+	padding: 7px 15px 6px;
 	display: block;
-	text-align: center;
+	text-align: left;
+	font-family: 'ralewaysemibold';
+	text-transform:uppercase;
+	font-size:12px;
+	display: inline-block;
+	width: 100%;
+	line-height: 25px;
+}
+.upadtes a{
+	background: #292934;
+	color: #fff !important;
 }
 .list-style{
 	margin:0;
@@ -1347,6 +1534,10 @@ h3.font-style1{
 }
 .list-style li{
 	border-bottom: 1px solid #AEAEAE;
+	background-image:url(../images/arrow-right.svg);
+	background-repeat:no-repeat;
+	background-position: center right 21px;
+	background-size: auto 15px;
 }
 .list-style li a{
 	font-family: 'ralewaylight';
@@ -1371,9 +1562,20 @@ h3.font-style1{
 	display:inline-block;
 	vertical-align:middle;
 	line-height: 18px;
+	float: right;
+	line-height: 15px;
 }
 .list-style .bg-dark a{
 	color:#ffffff;
+}
+.slide-page{
+   display: none;
+   position: absolute;
+   width: 100%;
+   top: 0px;
+}
+.active-page {
+   display: block;
 }
 /*************************************************************/
 /*	Notifications
@@ -1596,5 +1798,26 @@ input.search-box::-webkit-input-placeholder {
 }
 .fb-share, .tw-share {
 	margin-left: 12px;
+}
+}
+@media (max-width:320px){
+.edit-profile-page .profile-pic{
+	width: 75px;
+	height: 75px;
+}
+.profile-banner{
+	height:75px;
+}
+}
+@media (max-width:319px){
+.edit-img-sec >div{
+	display:block;
+	width:100%;
+	padding:0px 15px !important;
+	margin-bottom:10px;
+}
+.edit-img-sec{
+	margin-bottom:0px;
+	
 }
 }
