@@ -53,7 +53,10 @@ input, select, textarea{
 /*************************************************************/
 /*	Landing Page
 /*************************************************************/
-
+.mainlogo{
+	width:220px;
+	height:auto;
+}
 .landingpage{
 	background:url(../images/landingpage-bg.jpg) no-repeat;
 	background-size:cover;
@@ -63,7 +66,7 @@ input, select, textarea{
 }
 .landing-info{
 	background:rgba(0, 0, 0, 0.2);
-	padding:30px 25px;
+	padding:50px 25px 30px;
 	margin:50px 0px;
 	text-align:center;
 }
@@ -407,7 +410,7 @@ input, select, textarea{
 .add-comment{
 	padding: 20px 0px 0px;
 }
-#commnet-area input.cooment-box{
+#commnet-area input.comment-box{
 	color: #292934;
 	font-size: 11px;
 	padding: 6px 10px;
@@ -1762,7 +1765,7 @@ input.search-box::-webkit-input-placeholder {
 
 @media (max-width:380px){
 .landing-info {
-	padding: 30px 10px;
+	padding: 50px 10px 30px;
 }
 .landing-info h1{
 	font-size:30px;
