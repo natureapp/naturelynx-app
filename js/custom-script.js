@@ -1,11 +1,39 @@
 // JavaScript Document
 
 
+	
+jQuery( window ).resize(function() {
+	//Global variables
+	var device_height = jQuery(window).height();
+	var device_width = jQuery(window).width();
+	
+	//Landing footer position
+	var contentH = $(".landing-info").outerHeight();
+	var dialogH = $(".form-dialog").outerHeight();
+	if(contentH > device_height){
+		$(".landingpage-footer").css({"position":"relative"});
+	}
+	if(dialogH > device_height) {
+		$(".landingpage-footer").css({"position":"relative"});
+	}
+	
+});
 
 jQuery(document).ready(function($) {
- 
-
-
+	
+ 	//Global variables
+	var device_height = jQuery(window).height();
+	var device_width = jQuery(window).width();
+	
+	//Landing footer position
+	var contentH = $(".landing-info").outerHeight();
+	var dialogH = $(".form-dialog").outerHeight();
+  	if(contentH > device_height){
+	  	$(".landingpage-footer").css({"position":"relative"});
+  	}
+  	if(dialogH > device_height) {
+	  	$(".landingpage-footer").css({"position":"relative"});
+  	}  	
   	
 	//discover block height
 	var half_height = ($(window).height()-92 )/2;
@@ -17,8 +45,8 @@ jQuery(document).ready(function($) {
 	
 	
 	//Set min height as window height
-	var page_height = $(window).height();
-	$('.landingpage').css("min-height", page_height);
+	
+	$('.landingpage').css("min-height", device_height);
 	
 	
 	//searchpage
@@ -61,7 +89,6 @@ jQuery(document).ready(function($) {
 	});
 	
 	//Capture area width and height
-	var device_width = $(window).width();
 	$('.capture-frame').css("height", device_width);
 	
 	//datepicker and timepicker bootstrap
@@ -225,10 +252,3 @@ jQuery(document).ready(function($) {
   });
 }(jQuery));
 
-$( window ).resize(function() {
-	// Ser footer at bottom position
-	/*if($(window).height()>500){
-		$('.landingpage-footer').css({"position": "absolute", "bottom" : "0"});
-	}*/
-	
-});

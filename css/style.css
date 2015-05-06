@@ -221,14 +221,14 @@ input, select, textarea{
 /*	Sign In / Sign Up
 /*************************************************************/
 
-.formDialog{
-	padding: 100px 25px 50px;
+.form-dialog{
+	padding: 100px 25px 0px;
 	text-align: center;
 }
-.formDialog .mainlogo{
+.form-dialog .mainlogo{
 	margin-bottom: 50px;
 }
-.formDialog form{
+.form-dialog form{
 	max-width: 400px;
 	margin: 0 auto;
 }
