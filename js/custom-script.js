@@ -65,8 +65,8 @@ jQuery(document).ready(function($) {
 	//Add Comments
 	
 	$( "#add-comment" ).click(function() {
-		if($("#commnet-area").css({"display":"none"})){
-			$("#commnet-area").css({"display":"block"});
+		if($(".add-comment").css({"display":"none"})){
+			$(".add-comment").css({"display":"block"});
 			$("html, body").animate({scrollTop:$(document).height()}, "slow");
 			$("input.comment-box").focus();
 			

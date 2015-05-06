@@ -175,6 +175,9 @@ input, select, textarea{
 	height: 2px;
 	background:#fff;
 }
+.icons.refresh-btn{
+	padding: 9px 15px;
+}
 /*************************************************************/
 /*	Bottom Menu
 /*************************************************************/
@@ -453,6 +456,8 @@ input, select, textarea{
 /*************************************************************/
 #commnet-area{
 	display:none;
+}
+.commnet-area{
 	border-top:1px solid #AEAEAE;
 	padding-bottom:8px;
 }
@@ -472,8 +477,9 @@ input, select, textarea{
 }
 .add-comment{
 	padding: 20px 0px 0px;
+	display: none;
 }
-#commnet-area input.comment-box{
+.add-comment input.comment-box{
 	color: #292934;
 	font-size: 11px;
 	padding: 6px 10px;
@@ -484,7 +490,7 @@ input, select, textarea{
 	-o-border-radius: 0;
 	-ms-border-radius: 0;
 }
-#commnet-area .line-style-btn{
+.add-comment .line-style-btn{
 	width:100%;
 	height: 27px;
 }
