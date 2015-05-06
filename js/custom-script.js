@@ -34,7 +34,20 @@ jQuery(document).ready(function($) {
   		
 	});
 	
+	//Add Comments
 	
+	$( "#add-comment" ).click(function() {
+		if($("#commnet-area").css({"display":"none"})){
+			$("#commnet-area").css({"display":"block"});
+			$("html, body").animate({scrollTop:$(document).height()}, "slow");
+			$("input.comment-box").focus();
+			
+		}
+		else{
+			$("input.comment-box").focus();
+		}
+  		
+	});
 	
 	//Mysightings List view/ Grid View
 	$( ".list-view-btn" ).click(function() {
