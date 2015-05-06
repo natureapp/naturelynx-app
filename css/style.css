@@ -289,7 +289,7 @@ input, select, textarea{
 .pending-request{
 	position:absolute;
 	bottom:9px;
-	right:10px;
+	left:10px;
 }
 .pending-request .btn-red, .pending-request .btn-green{
 	text-transform:uppercase;
@@ -305,6 +305,38 @@ input, select, textarea{
 .btn-green{
 	background-color:#1E795F;
 	margin-right:6px;
+}
+.additional-info{
+	width: 48px;
+	height: 48px;
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	z-index: 1;
+}
+.additional-info:before{
+	content: '...';
+	font-size: 20px;
+	color: #000;
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	width: 48px;
+	height: 48px;
+	text-align: right;
+	z-index: 2;
+	padding: 13px 5px;
+}
+.additional-info:after{
+	content: '';
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0 0 48px 48px;
+	border-color: transparent transparent #ffffff transparent;
 }
 /*************************************************************/
 /*	Newsfeed status
@@ -468,6 +500,7 @@ input, select, textarea{
 	text-align:center;
 	color:#4B4B4B;
 	padding:21px 10px 16px 10px;
+	text-transform: capitalize;
 }
 .filter-type {
 	display: inline-block;
@@ -477,7 +510,7 @@ input, select, textarea{
 	margin-left: 45%;
 }
 .pawphotos, .myrange, .mylynx, .species, .nofilter, .hiddenphoto{
-	background:#82898A;
+	background:#999999;
 	display:block;
 }
 .filter-type.verified-icon{
@@ -520,6 +553,7 @@ input, select, textarea{
 	color:#fff;
 	padding:10px;
 	letter-spacing: 1px;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.12);
 }
 .mysightings .filterby-title{
 	color:#ffffff;
