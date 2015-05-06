@@ -50,6 +50,12 @@ input, select, textarea{
 .mrg-btn20{
 	margin-bottom:20px;
 }
+.mrg-top40{
+	 margin-top: 40px;
+ }
+.base-dark{
+	background: #2A2935;
+}
 /*************************************************************/
 /*	Landing Page
 /*************************************************************/
@@ -108,15 +114,20 @@ input, select, textarea{
 	font-family: 'ralewaylight';
 	font-size:12px;
 	line-height:22px;
-	padding:20px 15px 0px;
+	padding:20px 15px 10px;
 	position: absolute;
 	bottom: 0;
 	width: 100%;
 }
+.landingpage-footer p{
+	margin-bottom: 0px;
+}
 .landingpage-footer strong{
 	font-family: 'ralewayregular';
 }
-
+.landingpage-footer a, landingpage-footer a:hover{
+	color: #fff;
+}
 
 /*************************************************************/
 /*	Navigation
@@ -206,6 +217,26 @@ input, select, textarea{
 	background-size: auto 30px;
 }
 
+/*************************************************************/
+/*	Sign In / Sign Up
+/*************************************************************/
+
+.formDialog{
+	padding: 100px 25px 50px;
+	text-align: center;
+}
+.formDialog .mainlogo{
+	margin-bottom: 50px;
+}
+.formDialog form{
+	max-width: 400px;
+	margin: 0 auto;
+}
+.error-icon{
+	width: 20px;
+	height: auto;
+	margin-bottom: 12px;
+}
 /*************************************************************/
 /*	Newsfeed
 /*************************************************************/
