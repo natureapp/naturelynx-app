@@ -55,18 +55,14 @@ jQuery(document).ready(function($) {
 
 	
 	
-	//Comments Show / Hide 
-	$( "#total-comments" ).click(function() {
-		$("#commnet-area").slideToggle();
-		$('html, body').animate({scrollTop:$(document).height()}, 'slow');
-  		
-	});
+	
+	
 	
 	//Add Comments
-	
 	$( "#add-comment" ).click(function() {
 		if($(".add-comment").css({"display":"none"})){
 			$(".add-comment").css({"display":"block"});
+			$(".add-comment").removeClass("hidden");
 			$("html, body").animate({scrollTop:$(document).height()}, "slow");
 			$("input.comment-box").focus();
 			
@@ -123,6 +119,7 @@ jQuery(document).ready(function($) {
 			display: "none"
 		}, 300);
 	});
+	
 	
 	//Add/remove active class to group list
 	$( ".select-group-list li" ).on( 'click', function() {
@@ -190,16 +187,22 @@ jQuery(document).ready(function($) {
 		topage.css("left", pageWidth);
 		topage.addClass("active-page");
 		topage.add(frompage).animate({
-			"left": "-=" + pageWidth + "px"
+			"left": "-=" + pageWidth + "px",
 		}, 300).promise().done(function() {
 			frompage.removeClass('active-page');
 		});
 	}
-	var pageone = $("#tools-page");
 	$("a#goto-notifications").click(function(e) {
 		e.preventDefault();
 		var frompage = $(".tools-page"),
 			topage = frompage.siblings();
+		showPage(topage,frompage);
+	});
+	
+	$("a#total-comments").click(function(e) {
+		e.preventDefault();
+		var frompage = $(".main-page"),
+			topage = $(".comment-page");
 		showPage(topage,frompage);
 	});
 	
@@ -209,7 +212,34 @@ jQuery(document).ready(function($) {
 	var bottommenu_height = $(".bottom-menu").outerHeight();
 	$('.slide-page').css("padding-bottom", bottommenu_height);
 	
+	//Slide Right
 	
+	//Slide left and open 
+  		
+	
+	
+	$( "a#back" ).click(function() {
+		var pwid = $(".comment-page").width();
+		$(".comment-page").css("width", device_width);
+		$(".main-page").addClass('active-page');
+		$(".comment-page").animate({
+		    "left": + pwid +"px",
+		}, {
+		    duration: 300,
+		    queue: false
+		});
+
+		$(".main-page").animate({
+		    "left": "0px",
+		}, {
+		    duration: 300,
+		    queue: false
+		}).promise().done(function() {
+		$(".comment-page").removeClass('active-page');
+		});
+			});
+	
+
 	//Edit profile picture size
 	/*var colwidth = $(".profile-pic").width();
 	$('.profile-pic').css("height", colwidth);

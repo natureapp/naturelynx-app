@@ -178,6 +178,9 @@ input, select, textarea{
 .icons.refresh-btn{
 	padding: 9px 15px;
 }
+.icons.back{
+	float: left;
+}
 /*************************************************************/
 /*	Bottom Menu
 /*************************************************************/
@@ -477,7 +480,17 @@ input, select, textarea{
 }
 .add-comment{
 	padding: 20px 0px 0px;
+}
+.add-comment.hidden{
 	display: none;
+}
+.add-comment.fixed{
+	position: fixed;
+	bottom: 48px;
+	width: 100%;
+	z-index: 1000;
+	background: #fff;
+	padding-top: 5px;
 }
 .add-comment input.comment-box{
 	color: #292934;
