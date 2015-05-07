@@ -22,6 +22,11 @@ input, input:focus, input:hover, textarea:focus, textarea:hover, select:focus, b
 	outline:none;
 	border:none;
 }
+p{
+	color: #323633;
+	font-family: 'ralewaylight';
+	font-size: 11px;
+}
 h4{
 	color: #2A2935;
 	font-size: 13px;
@@ -305,7 +310,7 @@ input, select, textarea{
 .more-photos{
 	margin-left: -5px;
 	margin-right: -5px;
-
+	display: inline-block;
 }
 .more-photos .photowrap{
 	float: left;
@@ -522,6 +527,7 @@ input, select, textarea{
 	z-index: 1000;
 	background: #fff;
 	padding-top: 5px;
+	border-top: 1px solid #F2F2F2;
 }
 .add-comment input.comment-box{
 	color: #292934;
