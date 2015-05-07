@@ -134,6 +134,7 @@ input, select, textarea{
 }
 .landingpage-footer p{
 	margin-bottom: 0px;
+	color: #fff;
 }
 .landingpage-footer strong{
 	font-family: 'ralewayregular';
@@ -499,6 +500,7 @@ input, select, textarea{
 .commnet-area{
 	border-top:1px solid #AEAEAE;
 	padding-bottom:8px;
+	background: #fff;
 }
 .commnet-group{
 	padding-top: 8px;
@@ -557,6 +559,8 @@ input, select, textarea{
 	color:#4B4B4B;
 	padding:21px 10px 16px 10px;
 	text-transform: capitalize;
+	font-family: 'corbenregular';
+	font-size: 13px;
 }
 .filter-type {
 	display: inline-block;
@@ -565,10 +569,19 @@ input, select, textarea{
 	text-align: left;
 	margin-left: 45%;
 }
-.pawphotos, .myrange, .mylynx, .species, .nofilter, .hiddenphoto{
+.pawphotos, .myrange, .mylynx, .species, .nofilter{
 	background:#999999;
 	display:block;
 }
+.mysightings .hiddenphoto{
+	background:#484E4C;
+	display:block;
+}
+.mysightings .species{
+	background:#6F7677;
+	display: block;
+}
+
 .filter-type.verified-icon{
 	background:url(../images/verified-icon.svg) no-repeat left center;
 	background-size:22px auto;
@@ -707,7 +720,22 @@ input, select, textarea{
 	height:200px !important;
 	overflow:hidden;
 }
-
+.media-photo .white-btn{
+	position: absolute;
+	right: 15px;
+	top: 15px;
+}
+.white-btn{
+	background: #fff;
+	color: #1F1F28;
+	text-transform: uppercase !important;
+	font-size: 12px !important;
+	padding:5px 10px 3px !important;
+	font-family: 'ralewayregular';
+	letter-spacing: 1px;
+	width: 86px;
+	text-align: center;
+}
 /*************************************************************/
 /*	Capture
 /*************************************************************/
