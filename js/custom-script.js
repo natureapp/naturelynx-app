@@ -39,6 +39,11 @@ jQuery(document).ready(function($) {
 	var photowrapW = jQuery(".photowrap").width();
 	jQuery(".photowrap a").css("height",photowrapW);
 	
+	//Set height - ightings-post
+	var gridW = jQuery(".sightings-list.grid-view .sightings-post").width();
+	jQuery(".sightings-list.grid-view .sightings-post").css("height",gridW);
+	
+	
 	
 	//discover block height
 	var half_height = ($(window).height()-92 )/2;
