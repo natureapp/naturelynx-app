@@ -35,6 +35,11 @@ jQuery(document).ready(function($) {
 	  	$(".landingpage-footer").css({"position":"relative"});
   	}  	
   	
+  	//Set height - More photos
+	var photowrapW = jQuery(".photowrap").width();
+	jQuery(".photowrap a").css("height",photowrapW);
+	
+	
 	//discover block height
 	var half_height = ($(window).height()-92 )/2;
 	$('.discover-block').css("min-height", half_height);
@@ -44,20 +49,10 @@ jQuery(document).ready(function($) {
 	$('.discover-img-yellow img').css("height", img_height);
 	
 	
-	//Set min height as window height
-	
-	$('.landingpage').css("min-height", device_height);
-	
-	
 	//searchpage
 	var page_view = $(window).height()-92;
 	$('.search-page iframe').css("min-height", page_view);
 
-	
-	
-	
-	
-	
 	//Add Comments
 	$( "#add-comment" ).click(function() {
 		if($(".add-comment").css({"display":"none"})){
@@ -181,7 +176,7 @@ jQuery(document).ready(function($) {
 	});
 	
 	
-	//Slide left and open 
+	//Read more comments Slide left and open 
   	function showPage(topage, frompage) {
 		var pageWidth = frompage.width();
 		topage.css("left", pageWidth);
@@ -212,13 +207,8 @@ jQuery(document).ready(function($) {
 	var bottommenu_height = $(".bottom-menu").outerHeight();
 	$('.slide-page').css("padding-bottom", bottommenu_height);
 	
-	//Slide Right
-	
-	//Slide left and open 
-  		
-	
-	
-	$( "a#back" ).click(function() {
+	//Read more comments more comment page Slide back and open main page
+  	$( "a#back" ).click(function() {
 		var pwid = $(".comment-page").width();
 		$(".comment-page").css("width", device_width);
 		$(".main-page").addClass('active-page');
@@ -237,9 +227,10 @@ jQuery(document).ready(function($) {
 		}).promise().done(function() {
 		$(".comment-page").removeClass('active-page');
 		});
-			});
+	});
 	
-
+	
+	
 	//Edit profile picture size
 	/*var colwidth = $(".profile-pic").width();
 	$('.profile-pic').css("height", colwidth);
