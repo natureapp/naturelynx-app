@@ -2,12 +2,12 @@
 
 // Bootstrap core JavaScript
 //Placed at the end of the document so the pages load faster
-document.write('<script type="text/javascript" src="http://code.jquery.com/jquery-2.1.0.js"></script>');
+document.write('<script type="text/javascript" src="js/jquery.min.js"></script>');
 document.write('<script type="text/javascript" src="js/bootstrap.min.js"></script>');
 document.write('<script type="text/javascript" src="js/bootstrap-datepicker.js"></script>');
 document.write('<script type="text/javascript" src="js/bootstrap-timepicker.js"></script>');
 document.write('<script type="text/javascript" src="js/isotope.pkgd.min.js"></script>');
-document.write('<script type="text/javascript" src="https://rawgit.com/fyneworks/multifile/2.1.0-preview/jquery.MultiFile.js"></script>');
+document.write('<script type="text/javascript" src="js/jquery.MultiFile.js"></script>');
 document.write('<script type="text/javascript" src="js/custom-script.js"></script>');
 //IE10 viewport hack for Surface/desktop Windows 8 bug
 document.write('<script type="text/javascript" src="js/ie10-viewport-bug-workaround.js"></script>');
