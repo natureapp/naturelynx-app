@@ -84,6 +84,11 @@ jQuery(document).ready(function($) {
 		$(".sightings-list").addClass("grid-view");
 	});
 	
+	//Set height - Image upload Drop area 
+	var dropW = jQuery(".drop-area").width();
+	jQuery(".drop-area").css("height",dropW);
+         
+          
 	//Capture area width and height
 	$('.capture-frame').css("height", device_width);
 	
@@ -97,15 +102,6 @@ jQuery(document).ready(function($) {
 
 	
 	$('#timepicker').timepicker();
-	
-	//Capture label show/hide
-	$( ".cature-btn" ).click(function() {
-		$(".cpture-label-content").slideToggle();
-  		
-	});
-	$( ".cancel-btn" ).click(function() {
-		$(".cpture-label-content").slideToggle();	
-	});
 	
 	//Species Group Popup
 	$( "#speciesgroup-btn" ).click(function() {
