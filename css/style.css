@@ -736,6 +736,41 @@ input, select, textarea{
 	width: 86px;
 	text-align: center;
 }
+
+/*************************************************************/
+/*	No Sightings
+/*************************************************************/
+.no-sightings{
+	color: #fff;
+	text-align: center;
+	  margin-top: 30%;
+}
+.no-sightings p{
+	margin-bottom: 30px;
+	color: #fff;
+}
+.no-sightings .line-btn{
+	margin: 0px auto 10px;
+	display: block;
+	width: 140px;
+}
+.line-btn{
+	background: none;
+	border: 1px solid #fff;
+	color: #ffffff;
+	text-transform: uppercase !important;
+	font-size: 12px !important;
+	padding: 5px 10px 3px !important;
+	font-family: 'ralewayregular';
+	letter-spacing: 1px;
+	text-align: center;
+	
+}
+.line-btn:hover, .line-btn:focus, .line-btn:active{
+	color: #000000;
+	background: #ffffff;
+}
+
 /*************************************************************/
 /*	Capture
 /*************************************************************/
