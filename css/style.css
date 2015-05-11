@@ -703,7 +703,7 @@ a.list{
 	display: inline-block;
 	color: #1F1F27;
 	text-transform: uppercase;
-	font-size: 10px;
+	font-size: 11px;
 }
 /*************************************************************/
 /*	My Sightings
@@ -859,7 +859,7 @@ a.list{
 /*	My Sightings Edit
 /*************************************************************/
 .sighting-edit{
-	padding-top: 10px;
+	padding: 10px 0px;
 }
 .upload-sec{
 	position: relative;
