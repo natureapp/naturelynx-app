@@ -18,6 +18,9 @@ a, a:hover, a:focus, button{
 	outline:none;
 	text-decoration:none;
 }
+a{
+	color: #4788AC;
+}
 input, input:focus, input:hover, textarea:focus, textarea:hover, select:focus, button:focus{
 	outline:none;
 	border:none;
@@ -28,7 +31,7 @@ p{
 	font-size: 11px;
 }
 h4{
-	color: #2A2935;
+	color: #1f1f28;
 	font-size: 13px;
 	font-family: 'corbenregular';
 }
@@ -65,7 +68,7 @@ input, select, textarea{
 	 margin-top: 40px;
  }
 .base-dark{
-	background: #2A2935;
+	background: #1f1f28;
 }
 .row {
   margin-right: -5px;
@@ -124,10 +127,10 @@ input, select, textarea{
 	color:#FFFFFF
 }
 .light-btn{
-	background:#D48811;
+	background:#c67400;
 }
 .dark-btn{
-	background:#D35F19;
+	background:#c2480f;
 }
 .landingpage-footer{
 	text-align:center;
@@ -162,7 +165,7 @@ input, select, textarea{
 	padding: 7px 13px;
 }
 .app-nav{
-	background-color:#539ABA;
+	background-color:#4788ac;
 	border:none;
 	color:#fff;
 	position:fixed;
@@ -180,10 +183,10 @@ input, select, textarea{
 	background-color: rgba(255, 255, 255, 0.1);
 }
 .tools-icon.selected, .search-btn.selected{
-	background:#2A2935;
+	background:#1f1f28;
 }
 .search-btn.selected{
-	background-color:#2A2935;}
+	background-color:#1f1f28;}
 .icons{
 	float: right;
 	padding: 9px 10px;
@@ -204,7 +207,7 @@ input, select, textarea{
 .icons.back{
 	float: left;
 }
-.header-social{
+.header-right{
 	float: right;
 	padding: 2px 0px;
 }
@@ -218,11 +221,16 @@ input, select, textarea{
 .header-social .icons img{
 	height: 18px;
 }
+.header-right .line-btn{
+	display: inline-block;
+	margin: 4px 5px 4px 0px;
+	padding: 7px 10px 5px !important;
+}
 /*************************************************************/
 /*	Bottom Menu
 /*************************************************************/
 .bottom-menu{
-	background:#2A2935;
+	background:#1f1f28;
 	display: inline-block;
 	width: 100%;
 	position: fixed;
@@ -268,7 +276,7 @@ input, select, textarea{
 	padding: 100px 25px 0px;
 	text-align: center;
 	height: 100vh;
-	background: #2A2935;
+	background: #1f1f28;
 }
 .form-dialog .mainlogo{
 	margin-bottom: 50px;
@@ -304,7 +312,7 @@ input, select, textarea{
 	min-width: 100%;
 }
 .profile-name{
-	color:#2A2935;
+	color:#1f1f28;
 	font-size: 13px;
 	font-family: 'corbenregular';
 	margin:8px 15px;
@@ -316,7 +324,7 @@ input, select, textarea{
 }
 .profile-info .datetime span{
 	font-size:11px;
-	color:#2A2935;
+	color:#1f1f28;
 	font-family: 'ralewaylight';
 	line-height:15px;
 	display: block;
@@ -366,7 +374,7 @@ input, select, textarea{
 	float:left;
 }
 .btn-red{
-	background-color:#D10020;
+	background-color:#be0018;
 }
 .btn-green{
 	background-color:#1E795F;
@@ -404,6 +412,9 @@ input, select, textarea{
 	border-width: 0 0 48px 48px;
 	border-color: transparent transparent #ffffff transparent;
 }
+.additional{
+	margin: 20px 0px;	
+}
 /*************************************************************/
 /*	Newsfeed status
 /*************************************************************/
@@ -412,13 +423,14 @@ input, select, textarea{
 	display: block;
 }
 .pending{
-	background:#D58812;
+	background:#c67400;
 	display: block;
 }
 .unknown{
-	background:#D10020;
+	background:#be0018;
 	display: block;
 }
+
 .newsfeed-status{
 	display: block;
 	position: relative;
@@ -429,7 +441,7 @@ input, select, textarea{
 	position:absolute;
 }
 .newsfeed-status .status-icon.verified-icon, .newsfeed-status .status-icon.pending-icon, .newsfeed-status .status-icon.unknown-icon{
-.	display:block;
+	display:block;
 	margin:0 auto;
 	padding-top:31px;
 	background-position: center 5px;
@@ -437,7 +449,7 @@ input, select, textarea{
 	background-size:22px auto;
 }
 .newsfeed-status .status-icon.verified-icon{
-	background-color:#195E45;
+	background-color:#21674c;
 	background-image:url(../images/verified-icon.svg);
 }
 .newsfeed-status .status-icon.pending-icon{
@@ -448,6 +460,7 @@ input, select, textarea{
 	background-color:#AF002A;
 	background-image:url(../images/unknown-icon.svg);
 }
+
 .newsfeed-status .status-icon span{
 	text-transform:uppercase;
 	color:#ffffff;
@@ -494,7 +507,7 @@ input, select, textarea{
 .like-btn a, .comment-btn a{
 	padding-left:25px;
 	background-size:17px auto;
-	color:#2A2935;
+	color:#1f1f28;
 	font-size:11px;
 }
 .like-btn{
@@ -509,7 +522,7 @@ input, select, textarea{
 	
 }
 .total-comments a{
-	color:#2A2935;
+	color:#1f1f28;
 	font-family: 'ralewaybold';
 	font-size: 11px;
 }
@@ -529,7 +542,7 @@ input, select, textarea{
 	padding-top: 8px;
 }
 .comment-username{
-	color:#2A2935;
+	color:#1f1f28;
 	font-family: 'corbenregular';
 	font-size:12px;
 	display:block;
@@ -542,6 +555,9 @@ input, select, textarea{
 .add-comment{
 	padding: 20px 0px 0px;
 }
+.add-comment [class^="col"]{
+	padding: 0px;
+}
 .add-comment.hidden{
 	display: none;
 }
@@ -551,7 +567,7 @@ input, select, textarea{
 	width: 100%;
 	z-index: 1000;
 	background: #fff;
-	padding-top: 5px;
+	padding: 5px 0px;
 	border-top: 1px solid #F2F2F2;
 }
 .add-comment input.comment-box{
@@ -565,10 +581,12 @@ input, select, textarea{
 	-o-border-radius: 0;
 	-ms-border-radius: 0;
 }
-.add-comment .line-style-btn{
+.add-comment .solid-style-btn{
 	width:100%;
 	height: 27px;
 }
+
+
 /*************************************************************/
 /*	Filter By
 /*************************************************************/
@@ -600,11 +618,16 @@ input, select, textarea{
 	background:#484E4C;
 	display:block;
 }
-.mysightings .species{
-	background:#6F7677;
+.all{
+	background-color:#4788ac;
 	display: block;
 }
-
+.filter-type.all-icon{
+	background-image:url(../images/all-icon.svg);
+	background-size:22px auto;
+	background-repeat: no-repeat;
+	background-position: center left;
+}
 .filter-type.verified-icon{
 	background:url(../images/verified-icon.svg) no-repeat left center;
 	background-size:22px auto;
@@ -716,10 +739,10 @@ input, select, textarea{
 	border-color: transparent transparent transparent #5A605F;
 }
 .sightings-type.unknown-photos:after{
-	border-color: transparent transparent transparent #D10020;
+	border-color: transparent transparent transparent #be0018;
 }
 .sightings-type.pending-photos:after{
-	border-color: transparent transparent transparent #D58812;
+	border-color: transparent transparent transparent #c67400;
 }
 .sightings-type.verified-photos:after{
 	border-color: transparent transparent transparent #1E795F;
@@ -792,6 +815,7 @@ input, select, textarea{
 .line-btn:hover, .line-btn:focus, .line-btn:active{
 	color: #000000;
 	background: #ffffff;
+	border: 1px solid #fff;
 }
 
 /*************************************************************/
@@ -815,7 +839,8 @@ input, select, textarea{
 .sighting-edit .main-photo img{
 	min-height: 100%;
 	min-width: 100%;
-	max-height: 100%;
+	max-height: 120%;
+	max-width: 120%;
 }
 .helpme-btn:hover, .helpme-btn:focus{
 	color: #fff;
@@ -945,7 +970,7 @@ input, select, textarea{
 }
 .cature-icon{
 	border:5px solid #fff;
-	background-color:#539ABA;
+	background-color:#4788ac;
 	background-image:url(../images/applogo.svg);
 	background-repeat:no-repeat;
 	background-size:32px auto;
@@ -973,7 +998,7 @@ input, select, textarea{
 /*	Capture Label
 /*************************************************************/
 .helpme-btn{
-	background: #D10020;
+	background: #be0018;
 	padding: 8px;
 	display: inline-block;
 	width: 100%;
@@ -1042,7 +1067,7 @@ input, select, textarea{
    color: #292934;  
 }
 .gray-bg{
-	background-color:rgba(130, 137, 138, 0.2);
+	background-color:#e6e6e6;
 }
 textarea{
 	max-width:100%; 
@@ -1083,8 +1108,8 @@ textarea{
 	padding: 10px 10px 10px 45px;
 }
 .datepicker td.active, .datepicker td.active:hover{
-	background-color:#2A2935;
-	background-color: #2A2935 !Important;
+	background-color:#1f1f28;
+	background-color: #1f1f28 !Important;
 	background-image: none;
 }
 .datepicker td, .datepicker th, .datepicker td.active, .datepicker td.active:hover, .bootstrap-timepicker-widget table td a:hover, .dropdown-menu, .datepicker.dropdown-menu, .datepicker table tr td, .datepicker table tr th{
@@ -1170,7 +1195,7 @@ font-weight:normal;
   left: 0px;
   width: 50%;
   height: 35px;
-  background: #2A2935;
+  background: #1f1f28;
   color:#fff;
   -webkit-transition: left 0.10s ease-out;
   -moz-transition: left 0.10s ease-out;
@@ -1196,6 +1221,19 @@ font-weight:normal;
 	background:#292934;
 	color:#fff;
 }
+.solid-style-btn, .solid-style-btn:hover{
+	border: 1px solid #292934;
+	background: #292934;
+	color: #fff;
+	font-family: 'ralewayregular';
+	letter-spacing:1px;
+	font-size: 11px;
+}
+.solid-style-btn:focus{
+	border: 1px solid #292934;
+	background: none;
+	color: #292934;
+}
 .bootstrap-timepicker-widget.timepicker-orient-bottom:before, .bootstrap-timepicker-widget.timepicker-orient-bottom:after,.datepicker:before, .datepicker:after{
 	display:none;
 }
@@ -1204,7 +1242,7 @@ font-weight:normal;
 /*	Select Group
 /*************************************************************/
 .select-group-popup{
-	background:#2A2935;
+	background:#1f1f28;
 	position:absolute;
 	top:0px;
 	left:-100%;
@@ -1258,14 +1296,14 @@ font-weight:normal;
 	border-bottom:none;
 }
 .select-group-list li.active a{
-	background:#D58812;
+	background:#c67400;
 	color:#fff;
 }
 /*************************************************************/
 /* Species Group
 /*************************************************************/
 .species-group{
-	background:#2A2935;
+	background:#1f1f28;
 }
 /*************************************************************/
 /*	Create Group
@@ -1300,7 +1338,7 @@ font-weight:normal;
 	width:100%;
 }
 .bg-yellow{
-	background:#D58812;
+	background:#c67400;
 }
 .bg-green{
 	background:#1E795F;
@@ -1389,6 +1427,10 @@ font-weight:normal;
 	background:#539BBB;
 	color:#fff;
 }
+.bg-skyblue{
+	background: #4788ac;
+	color: #fff;
+}
 .font-style1{
 	font-family: 'ralewayextralight';
 	font-size:18px;
@@ -1431,7 +1473,7 @@ h3.font-style1{
 /*************************************************************/
 
 .discover-group-header{
-	background:#2A2935;
+	background:#1f1f28;
 	color:#fff;
 	padding:20px 15px;
 }
@@ -1457,7 +1499,7 @@ h3.font-style1{
 }
 .white-linebtn.is-checked{
 	background:#fff;
-	color:#2A2935;
+	color:#1f1f28;
 }
 .button-group{
 	text-align:center;
@@ -1481,14 +1523,14 @@ h3.font-style1{
 	vertical-align: middle;
 	letter-spacing:1px;
 }
-.bg-skyblue{
-	background:#539ABA;
+.bg-blue{
+	background:#1F1F28;
 }
 .bg-orange{
 	background:#D35F19;
 }
 .bg-red{
-	background:#D10020;
+	background:#be0018;
 }
 .group-list-content .group-icon{
 	width:35px;
@@ -1864,7 +1906,7 @@ h3.font-style1{
 	color:#fff;
 	height:22px;
 	width:22px;
-	background:#D10020;
+	background:#be0018;
 	border-radius:50%;
 	-moz-border-radius:50%;
 	-webkit-border-radius:50%;
@@ -1985,7 +2027,7 @@ h3.font-style1{
 	font-size:11px;
 }
 .search-box{
-	background:#2A2935;
+	background:#1f1f28;
 	color:#ffffff;
 	font-family: 'ralewaylight';
 	font-size:17px;
