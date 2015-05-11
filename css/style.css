@@ -314,7 +314,6 @@ input, select, textarea{
 .profile-name{
 	color:#1f1f28;
 	font-size: 13px;
-	font-family: 'corbenregular';
 	margin:8px 15px;
 	float: left;
 }
@@ -675,6 +674,38 @@ input, select, textarea{
 }
 
 /*************************************************************/
+/*	search
+/*************************************************************/
+.search.form [class^="col"] {
+  padding: 0px;
+}
+.search.form input[type="search"]{
+	text-align: left;
+}
+.head-bar{
+	padding: 20px;
+	border-bottom: 1px solid #AEAEAE;
+}
+.head-bar h4{
+	text-align: center;
+	margin: 0px auto 20px;
+}
+ul.list{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+a.list{
+	background: #fff;
+	border-bottom: 1px solid #AEAEAE;
+	padding: 15px;
+	width: 100%;
+	display: inline-block;
+	color: #1F1F27;
+	text-transform: uppercase;
+	font-size: 20px;
+}
+/*************************************************************/
 /*	My Sightings
 /*************************************************************/
 .mysightings{
@@ -693,13 +724,19 @@ input, select, textarea{
 	background-size:100% 100%;
 	outline:none;
 	border:none;
+	opacity: 0.5;
+}
+.grid-view-btn.active, .list-view-btn.active{
+	opacity: 1;
 }
 .list-view-btn{
 	background:url(../images/listview-icon.svg) no-repeat;
 	margin-right: 5px;
+	background-size: 100% 100%;
 }
 .grid-view-btn{
 	background:url(../images/gridview-icon.svg) no-repeat;
+	background-size: 100% 100%;
 }
 .sightings-list{
 	display:inline-block;
@@ -839,8 +876,7 @@ input, select, textarea{
 .sighting-edit .main-photo img{
 	min-height: 100%;
 	min-width: 100%;
-	max-height: 120%;
-	max-width: 120%;
+	max-width: 100%;
 }
 .helpme-btn:hover, .helpme-btn:focus{
 	color: #fff;
@@ -1213,7 +1249,7 @@ font-weight:normal;
 .line-style-btn, .line-style-btn:hover{
 	border:1px solid #292934;
 	background:#ffffff;
-	font-family: 'ralewaybold';
+	font-family: 'ralewayregular';
 	letter-spacing:1px;
 }
 .line-style-btn:focus{
@@ -1222,17 +1258,11 @@ font-weight:normal;
 	color:#fff;
 }
 .solid-style-btn, .solid-style-btn:hover{
-	border: 1px solid #292934;
 	background: #292934;
-	color: #fff;
+	color: #fff !important;
 	font-family: 'ralewayregular';
 	letter-spacing:1px;
-	font-size: 11px;
-}
-.solid-style-btn:focus{
-	border: 1px solid #292934;
-	background: none;
-	color: #292934;
+	font-size: 11px !important;
 }
 .bootstrap-timepicker-widget.timepicker-orient-bottom:before, .bootstrap-timepicker-widget.timepicker-orient-bottom:after,.datepicker:before, .datepicker:after{
 	display:none;

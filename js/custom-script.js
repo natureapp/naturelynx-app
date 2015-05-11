@@ -77,11 +77,17 @@ jQuery(document).ready(function($) {
 	$( ".list-view-btn" ).click(function() {
 		$(".sightings-list").removeClass("grid-view");
 		$(".sightings-list").addClass("list-view");
+		$(".list-view-btn").addClass("active");
+		$(".grid-view-btn").removeClass("active");
+		
 	});
 	
 	$( ".grid-view-btn" ).click(function() {
 		$(".sightings-list").removeClass("list-view");
 		$(".sightings-list").addClass("grid-view");
+		$(".grid-view-btn").addClass("active");
+		$(".list-view-btn").removeClass("active");
+		
 	});
 	
 	//Set height - Image upload Drop area 
