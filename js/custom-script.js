@@ -46,16 +46,6 @@ jQuery(document).ready(function($) {
 	jQuery(".sightings-list.grid-view .sightings-post").css("height",gridW);
 	
 	
-	
-	//discover block height
-	var half_height = ($(window).height()-92 )/2;
-	$('.discover-block').css("min-height", half_height);
-	var img_height = $('.bg-green').outerHeight();
-	$('.discover-img-green img').css("height", img_height);
-	var img_height = $('.bg-yellow').outerHeight();
-	$('.discover-img-yellow img').css("height", img_height);
-	
-	
 	//searchpage
 	var page_view = $(window).height()-92;
 	$('.search-page iframe').css("min-height", page_view);
