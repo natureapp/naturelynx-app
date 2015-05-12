@@ -254,6 +254,14 @@ jQuery(document).ready(function($) {
 		$( ".mygroups-btn").addClass("selected");
 		$("#mygroups").css("display","block");
 	});
+	
+	
+	//Choose from selection list
+	$( ".selection li" ).on( 'click', function() {
+		 $( this ).parent().find( 'li.selected' ).removeClass( 'selected' );
+         $( this ).addClass( 'selected' );
+	});
+	
 	//Edit profile picture size
 	/*var colwidth = $(".profile-pic").width();
 	$('.profile-pic').css("height", colwidth);

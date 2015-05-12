@@ -748,13 +748,15 @@ input, select, textarea{
 .search.form input[type="search"]{
 	text-align: left;
 }
+.search.form{
+	margin-top: 20px;
+}
 .head-bar{
 	padding: 20px;
-	border-bottom: 1px solid #AEAEAE;
 }
 .head-bar h4{
 	text-align: center;
-	margin: 0px auto 20px;
+	margin: 0px auto;
 }
 ul.list{
 	margin: 0px;
@@ -770,6 +772,9 @@ a.list{
 	color: #1F1F27;
 	text-transform: uppercase;
 	font-size: 11px;
+}
+ul.list li:first-child a.list{
+	border-top: 1px solid #AEAEAE;
 }
 /*************************************************************/
 /*	My Sightings
@@ -1408,6 +1413,29 @@ font-weight:normal;
 }
 #mymissions{
 	display: none;
+}
+/*************************************************************/
+/* Selection style
+/*************************************************************/
+.selection ul{
+	margin: 0;
+	padding: 0px;
+	list-style: none;
+}
+.selection li a{
+	background: #E6E6E6;
+	border-bottom: 1px solid #AEAEAE;
+	padding: 15px;
+	width: 100%;
+	display: inline-block;
+	color: #1F1F27;
+	text-transform: uppercase;
+	font-size: 11px;
+	text-align: center;
+}
+.selection li.selected  a{
+	background:#1F1F28;
+	color:#fff;
 }
 /*************************************************************/
 /* Species Group
