@@ -177,7 +177,6 @@ input, select, textarea{
 	height: 44px;
 }
 .tools-icon{
-	background-color:#447C95;
 	padding: 14px 9px;
 }
 .icons:hover, .icons:focus, .filter-btn.selected{
@@ -210,7 +209,6 @@ input, select, textarea{
 }
 .header-right{
 	float: right;
-	padding: 2px 0px;
 }
 .header-social span{
 	font-family: 'open_sansregular';
@@ -222,16 +220,35 @@ input, select, textarea{
 .header-social .icons img{
 	height: 18px;
 }
-.header-right .line-btn{
+.app-nav .line-btn{
 	display: inline-block;
-	margin: 6px 4px 4px 0px;
+	margin: 8px 4px 7px 0px;
 	padding: 6px 6px 3px !important;
 }
-.header-right .line-btn:hover,
-.header-right .line-btn:focus,
-.header-right .line-btn.selected{
+.app-nav .line-btn:hover,
+.app-nav .line-btn:focus,
+.app-nav .line-btn.selected{
   color: #4788ac;
   background: #ffffff;
+}
+.create-btn{
+	min-width: 86px;
+}
+.header-center{
+	  margin: 0px auto;
+  vertical-align: middle;
+  display: table-cell;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2999;
+  text-align: center;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 80%;
 }
 /*************************************************************/
 /*	Bottom Menu
@@ -1654,6 +1671,9 @@ h3.font-style1{
 	padding:10px 15px;
 	width:100%;<15></15>
 }
+.list-content a.element-item{
+	display: block;
+}
 .list-content .element-item:first-child{
 	border-top: 1px solid #AEAEAE;
 }
@@ -1666,6 +1686,7 @@ h3.font-style1{
 	display: inline-block;
 	vertical-align: middle;
 	letter-spacing:1px;
+	line-height: 9px;
 }
 .bg-blue{
 	background:#1F1F28;
@@ -1776,9 +1797,13 @@ h3.font-style1{
 	background:url(../images/settings-icon.svg) no-repeat;
 }
 .link-icons-group{
-	margin: 10px auto;
-	text-align: center;
-	display: block;
+	margin: 0px auto 5px;
+	text-align: left;
+	display: inline-block;
+	width: 100%;
+}
+.link-icons-group .edit-icon{
+	float: right;
 }
 .link-icons-group a{
 	width:22px; 
@@ -1789,24 +1814,35 @@ h3.font-style1{
 }
 .main-title{
 	font-family: 'corbenregular';
-	font-size:20px;
+	font-size:15px;
 	text-align:center;
-	color:#292934;
+	color:#1F1F28;
 	margin-top:0px;
-	
+	margin-bottom: 5px;
 }
-.status {
-	color:#539BBB;
-	font-size:11px;
-	font-family: 'ralewaymedium';
+.link{
+	color: #4789AD;
+	font-size:10px;
+	font-family: 'ralewayregular';
 	text-align:center;
 	display:block;
-	margin-bottom:5px;
+	margin: 8px 0px 5px;
+}
+.desc {
+	color:#262926;
+	font-size:10px;
+	font-family: 'ralewayregular';
+	text-align:center;
+	display:block;
+	margin: 15px 0px 0px;
+}
+.desc a, .area-range a{
+	color:#1F1F28; 
 }
 .area-range{
-	color:#292934;
-	font-family: 'ralewaylight';
-	font-size:9px;
+	color:#1F1F28;
+	font-family: 'ralewayregular';
+	font-size:11px;
 	display:block;
 	text-align:center;
 }
@@ -1868,11 +1904,11 @@ h3.font-style1{
 /*************************************************************/
 /*	Profile page
 /*************************************************************/
-.profile-page .link-bar{
+.link-bar{
 	margin-top:20px;
 	text-align:center;
 }
-.profile-page .link-bar .white-linebtn{
+.link-bar .white-linebtn{
 	display: inline-block;
 	margin: 10px auto;
 	text-align: center;
