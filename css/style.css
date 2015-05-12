@@ -769,7 +769,7 @@ input, select, textarea{
 	margin-top: 20px;
 }
 .head-bar{
-	padding: 20px;
+	padding: 20px 0px;
 }
 .head-bar h4{
 	text-align: center;
@@ -1459,6 +1459,7 @@ font-weight:normal;
 .species-group{
 	background:#1f1f28;
 }
+
 /*************************************************************/
 /*	Create Group
 /*************************************************************/
@@ -1543,6 +1544,27 @@ font-weight:normal;
 	width: auto;
 }
 
+/*************************************************************/
+/* Member 
+/*************************************************************/
+.delete{
+	background-color: #BE0018;
+	background-image: url(../images/close-icon.svg);
+	background-position: center center;
+	background-size: 10px auto;
+	background-repeat: no-repeat;
+	width: 44px;
+	height: 100%;
+	position: absolute;
+	right: -45px;
+	top: 0;
+	z-index: 1;
+	
+}
+.member{
+	padding-right: 60px !important;
+	overflow: hidden;
+}
 /*************************************************************/
 /*	Species Profile
 /*************************************************************/
@@ -1669,7 +1691,8 @@ h3.font-style1{
 	background:#fff;
 	border-bottom:1px solid #AEAEAE;
 	padding:10px 15px;
-	width:100%;<15></15>
+	width:100%;
+	position: relative;
 }
 .list-content a.element-item{
 	display: block;

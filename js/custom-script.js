@@ -252,12 +252,12 @@ jQuery(document).ready(function($) {
          $( this ).addClass( 'selected' );
 	});
 	
-	//Edit profile picture size
-	/*var colwidth = $(".profile-pic").width();
-	$('.profile-pic').css("height", colwidth);
-	$('.profile-pic img').css("height", colwidth);
-	$('.profile-banner').css("height", colwidth);
-	$('.profile-banner img').css("height", "100%");*/
+	//Delete Member
+	$(".member").on( 'click', function() {
+		$(this).children(".delete").animate({
+			"right":"0px"
+			}, 100);
+	});
 });
 
 
