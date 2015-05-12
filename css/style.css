@@ -333,6 +333,7 @@ input, select, textarea{
 }
 .media-photo{
 	position:relative;
+	overflow: hidden;
 }
 .media-photo img{
 	width:100%;
@@ -414,6 +415,42 @@ input, select, textarea{
 .additional{
 	margin: 20px 0px;	
 }
+.avatar-photo{
+	background: #999999;
+}
+.avatar-photo img{
+	height: 100px;
+	width: auto;
+	margin: 19% auto;
+	display: block;
+}
+
+@media (max-height:568px){
+	.media-photo{
+		height: 220px;
+	}
+}
+@media (min-height:569px){
+	.media-photo{
+		height: 250px;
+	}
+}
+@media (min-height:736px){
+	.media-photo{
+		height: 290px;
+	}
+}
+@media (min-height:800px){
+	.media-photo{
+		height: 330px
+	}
+}
+@media (min-height:890px){
+	.media-photo{
+		height: 400px
+	}
+}
+
 /*************************************************************/
 /*	Newsfeed status
 /*************************************************************/
