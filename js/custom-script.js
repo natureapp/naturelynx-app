@@ -9,13 +9,15 @@ jQuery( window ).resize(function() {
 	
 	//Landing footer position
 	var contentH = $(".landing-info").outerHeight();
-	var dialogH = $(".form-dialog").outerHeight();
 	if(contentH > device_height){
 		$(".landingpage-footer").css({"position":"relative"});
 	}
+	var dialogH = $(".form-dialog").outerHeight();
 	if(dialogH > device_height) {
 		$(".landingpage-footer").css({"position":"relative"});
 	}
+	
+	
 	
 });
 
@@ -236,8 +238,22 @@ jQuery(document).ready(function($) {
 		});
 	});
 	
-	
-	
+	//Mission or Group
+	$( ".missions-groups .element-item" ).on( 'click', function() {
+		$( this ).toggleClass( 'selected' );
+	});
+	$( ".mymissions-btn").on( 'click', function() {
+		$( ".mymissions-btn").addClass("selected");
+		$("#mymissions").css("display","block");
+		$( ".mygroups-btn").removeClass("selected");
+		$("#mygroups").css("display","none");
+	});
+	$( ".mygroups-btn").on( 'click', function() {
+		$( ".mymissions-btn").removeClass("selected");
+		$("#mymissions").css("display","none");
+		$( ".mygroups-btn").addClass("selected");
+		$("#mygroups").css("display","block");
+	});
 	//Edit profile picture size
 	/*var colwidth = $(".profile-pic").width();
 	$('.profile-pic').css("height", colwidth);

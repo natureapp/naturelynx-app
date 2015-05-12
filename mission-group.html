@@ -24,12 +24,10 @@
 
     <div class="app-nav">
 	    <div class="header-right">
-		    <div id="filters" class="button-group"> 
-			    <button class="line-btn" data-filter=".groups">MY GROUPS</button>
-			    <button class="line-btn" data-filter=".missions">MY MISSIONS</button>
-			    <input type="submit" class="line-btn" value="SAVE"/>
-		    </div>
-	    </div>
+		    <button class="line-btn mygroups-btn selected">MY GROUPS</button>
+		    <button class="line-btn mymissions-btn">MY MISSIONS</button>
+		    <input type="submit" class="line-btn" value="SAVE"/>
+		</div>
         <a class="icons back" href="newsighting.html"><img src="images/back.svg" alt=""></a>
     </div>
     <!--/.navigation -->
@@ -38,62 +36,47 @@
     <div class="wrapper">
         <!--Mission or Group-->
         
-        
-        <div class="discover-groupspage">
-        	<div class="group-list-content">
-            	<div class="isotope">
-                	<div class="element-item groups" data-category="groups">
-						<div class="item-group">
-                        	<a href="individual-group-public-view.html" class="group-icon bg-blue"><img src="images/uni-logo.svg" alt="" class="grouplogopng"></a>
-							<a href="individual-group-public-view.html" class="gropu-name">UNIVERSITY OF CALGARY</a>
-						</div>
+        <div class="missions-groups">
+	        <div id="mygroups">
+	        	<div class="list-content">
+	            	<div class="element-item">
+						<div class="item-icon bg-blue"><img src="images/uni-logo.svg" alt="" class="logopng"></div>
+						<div class="item-title">UNIVERSITY OF CALGARY</div>
 					</div>
-					<div class="element-item missions" data-category="missions">
-						<div class="item-group">
-                        	<a href="individual-group-public-view.html" class="group-icon bg-red"><img src="images/uni-logo.svg" alt="" class="grouplogopng"></a>
-							<a href="individual-group-public-view.html" class="gropu-name">UNIVERSITY OF CALGARY</a>
-						</div>
+					<div class="element-item">
+						<div class="item-icon bg-yellow"><img src="images/uni-logo.svg" alt="" class="logopng"></div>
+						<div class="item-title">UNIVERSITY OF CALGARY</div>
 					</div>
-                    <div class="element-item groups" data-category="groups">
-						<div class="item-group">
-							<a href="individual-group-public-view.html" class="group-icon bg-yellow"><img src="images/uni-logo.svg" alt="" class="grouplogopng"></a>
-							<a href="individual-group-public-view.html" class="gropu-name">UNIVERSITY OF CALGARY</a>
-						</div>
+	                <div class="element-item">
+						<div class="item-icon bg-red"><img src="images/uni-logo.svg" alt="" class="logopng"></div>
+						<div class="item-title">UNIVERSITY OF CALGARY</div>
 					</div>
-                    <div class="element-item groups" data-category="groups">
-						<div class="item-group">
-							<a href="individual-group-public-view.html" class="group-icon bg-red"><img src="images/uni-logo.svg" alt="" class="grouplogopng"></a>
-							<a href="individual-group-public-view.html" class="gropu-name">UNIVERSITY OF CALGARY</a>
-						</div>
+					<div class="element-item">
+						<div class="item-icon bg-orange"><img src="images/uni-logo.svg" alt="" class="logopng"></div>
+						<div class="item-title">UNIVERSITY OF CALGARY</div>
 					</div>
-					<div class="element-item missions" data-category="missions">
-						<div class="item-group">
-                        	<a href="individual-group-public-view.html" class="group-icon bg-blue"><img src="images/uni-logo.svg" alt="" class="grouplogopng"></a>
-							<a href="individual-group-public-view.html" class="gropu-name">UNIVERSITY OF CALGARY</a>
-						</div>
+					<div class="element-item">
+						<div class="item-icon bg-green"><img src="images/uni-logo.svg" alt="" class="logopng"></div>
+						<div class="item-title">UNIVERSITY OF CALGARY</div>
 					</div>
-                    <div class="element-item groups" data-category="groups">
-						<div class="item-group">
-							<a href="individual-group-public-view.html" class="group-icon bg-orange"><img src="images/uni-logo.svg" alt="" class="grouplogopng"></a>
-							<a href="individual-group-public-view.html" class="gropu-name">UNIVERSITY OF CALGARY</a>
-						</div>
+	            </div>
+	        </div>
+	        <div id="mymissions">
+	        	<div class="list-content">
+					<div class="element-item">
+						<div class="item-icon bg-red"><img src="images/uni-logo.svg" alt="" class="logopng"></div>
+						<div class="item-title">UNIVERSITY OF CALGARY</div>
 					</div>
-					<div class="element-item missions" data-category="missions">
-						<div class="item-group">
-                        	<a href="individual-group-public-view.html" class="group-icon bg-yellow"><img src="images/uni-logo.svg" alt="" class="grouplogopng"></a>
-							<a href="individual-group-public-view.html" class="gropu-name">UNIVERSITY OF CALGARY</a>
-						</div>
+	                <div class="element-item">
+						<div class="item-icon bg-blue"><img src="images/uni-logo.svg" alt="" class="logopng"></div>
+						<div class="item-title">UNIVERSITY OF CALGARY</div>
 					</div>
-                    <div class="element-item groups" data-category="groups">
-						<div class="item-group">
-							<a href="individual-group-public-view.html" class="group-icon bg-green"><img src="images/uni-logo.svg" alt="" class="grouplogopng"></a>
-							<a href="individual-group-public-view.html" class="gropu-name">UNIVERSITY OF CALGARY</a>
-						</div>
+					<div class="element-item">
+						<div class="item-icon bg-yellow"><img src="images/uni-logo.svg" alt="" class="logopng"></div>
+						<div class="item-title">UNIVERSITY OF CALGARY</div>
 					</div>
-                    
-                    
-              	</div>
-            </div>
+	            </div>
+	        </div>
         </div>
         <!--/.Mission or Group-->
     </div>
