@@ -65,8 +65,11 @@ input, select, textarea{
 	margin-bottom:20px;
 }
 .mrg-top40{
-	 margin-top: 40px;
- }
+	margin-top: 40px;
+}
+.mrg-top-15{
+	margin-top: 15px !important;
+}
 .base-dark{
 	background: #1f1f28;
 }
@@ -970,7 +973,7 @@ ul.list li:first-child a.list{
 .helpme-btn:hover, .helpme-btn:focus{
 	color: #fff;
 }
-.sighting-edit .drop-area{
+.drop-area{
   background-color:#E6E6E6;
   background-image: url(../images/add.svg);
   background-repeat: no-repeat;
@@ -981,17 +984,17 @@ ul.list li:first-child a.list{
   position: relative;
   overflow: hidden;
 }
-.sighting-edit .drop-area input {
+.drop-area input {
     display: block !important;
     width: 100% !important;
     height: 100% !important;
     opacity: 0 !important;
     overflow: hidden !important;
 }
-.sighting-edit .MultiFile-title{
+.MultiFile-title{
 	display: none;
 }
-.sighting-edit .MultiFile-label{
+.MultiFile-label{
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -1000,19 +1003,19 @@ ul.list li:first-child a.list{
 	height: 100%;
 	background:#191919;
 }
-.sighting-edit .MultiFile-list.uploaded{
+.MultiFile-list.uploaded{
 	display: block;
 }
-.sighting-edit .MultiFile-wrap{
+.MultiFile-wrap{
 	height: 100%;
 }
-.sighting-edit .MultiFile-label img{
-	  min-height: 100%;
-  min-width: 100%;
-  max-width: none;
-  max-height: 100%
+.MultiFile-label img{
+	min-height: 100%;
+	min-width: 100%;
+	max-width: none;
+	max-height: 100%
 }
-.sighting-edit .MultiFile-remove{
+.MultiFile-remove{
 	  position: absolute;
   z-index: 1;
   width: 100%;
@@ -1023,7 +1026,7 @@ ul.list li:first-child a.list{
   bottom: 0;
   text-indent: -9999px;
 }
-.sighting-edit .MultiFile-remove:before{
+.MultiFile-remove:before{
 	content: '';
 	background: url(../images/close-icon.svg) no-repeat;
 	background-position: center center;
@@ -1037,11 +1040,10 @@ ul.list li:first-child a.list{
 	background: #1F1F27;
   font-size: 10px;
   width: 100%;
-  padding: 10px;
+  padding: 10px 5px;
   text-align: center;
   display: inline-block;
   color: #fff;
-  letter-spacing: 1px;
     height: 35px;
 }
 .btn-dark:hover, .btn-dark:focus{
@@ -1475,84 +1477,74 @@ textarea{
 .create-mission h4{
 	text-align: center;
 }
+.create-mission .edit-banner{
+	width: 50%;
+	position: relative;
+}
+.edit-banner:before {
+	content: "";
+	display: block;
+  	padding-top: 50%;
+}
+
 .edit-banner{
-	width: 150px;
-	height: 60px;
 	background: #E6E6E6;
 	margin-left: auto;
 	margin-right: auto;
 }
-.edit-banner img{
-	width: 100%;
-	height: auto;
+.edit-banner .upload-sec {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
 }
 .edit-banner .drop-area{
-  background-color:#E6E6E6;
-  background-image: url(../images/add.svg);
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 9px auto; 
-  text-align: center;
-  cursor:pointer;
-  position: relative;
-  overflow: hidden;
-  height: 100%;
-}
-.edit-banner .drop-area input {
-    display: block !important;
-    width: 100% !important;
-    height: 100% !important;
-    opacity: 0 !important;
-    overflow: hidden !important;
-}
-.edit-banner .MultiFile-title{
-	display: none;
-}
-.edit-banner .MultiFile-label{
-	position: absolute;
-	top: 0;
-	left: 0;
-	overflow: hidden;
-	width: 100%;
-	height: 100%;
-	background:#191919;
-}
-.edit-banner .MultiFile-list.uploaded{
-	display: block;
-}
-.edit-banner .MultiFile-wrap{
 	height: 100%;
 }
-.edit-banner .MultiFile-label img{
-	  min-height: 100%;
-  min-width: 100%;
-  max-width: none;
-  max-height: 100%
+.create-mission input[type="submit"], .create-group input[type="submit"]{
+	width: 86px;
+	float: right;
 }
-.edit-banner .MultiFile-remove{
-	  position: absolute;
-  z-index: 1;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  text-indent: -9999px;
-}
-.edit-banner .MultiFile-remove:before{
-	content: '';
-	background: url(../images/close-icon.svg) no-repeat;
-	background-position: center center;
-	background-size: 8px auto;
-	position: absolute;
-	display: block;
-	width: 100%;
-	height: 100%;
+.create-mission input[type="button"], .create-group input[type="button"]{
+	width: 86px;
+	float: left;
 }
 /*************************************************************/
 /*	Create Group
 /*************************************************************/
+.create-group h4{
+	text-align: center;
+}
+.create-group .edit-banner{
+	width: 100%;
+	position: relative;
+	margin-top: 10px;
+}
+.edit-profile-pic{
+	width: 65%;
+	position: relative;
+	border-radius: 100%;
+	overflow: hidden;
+	border: 1px solid #E6E6E6;
+	margin: 0 auto;
+}
+.edit-profile-pic:before{
+	content: "";
+	display: block;
+	padding-top: 100%;
+}
+.edit-profile-pic .upload-sec {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+.edit-profile-pic .drop-area{
+	height: 100%;
+}
+
 .create-group-title{
 	color:#4B4B4B;
 	margin: 0px;
@@ -1933,7 +1925,7 @@ h3.font-style1{
 	margin-top:0px;
 	margin-bottom: 5px;
 }
-.link{
+.link, .status{
 	color: #4789AD;
 	font-size:10px;
 	font-family: 'ralewayregular';
@@ -2007,13 +1999,14 @@ h3.font-style1{
 	font-family: 'ralewaybold';
 	text-align:center;
 	padding:10px 15px;
-	border-bottom:1px solid #AEAEAE;
+	border-top:1px solid #AEAEAE;
 	display: block;
 	color:#292934;
 }
 .liststyle1 li:last-child a{
-	border-bottom:none;
+	border-bottom:1px solid #AEAEAE;
 }
+
 /*************************************************************/
 /*	Profile page
 /*************************************************************/
@@ -2031,11 +2024,13 @@ h3.font-style1{
 	background:url(../images/edit-icon2.svg) no-repeat;
 	background-size:22px auto;
 	background-position:0px 0px;
+	float: none;
 }
 .profile-page .setting-icon{
 	background:url(../images/settings-icon2.svg) no-repeat;
 	background-size:22px auto;
 	background-position:0px 0px;
+	float: none;
 }
 .profile-page .edit-icon:hover, .profile-page .edit-icon:focus{
 	background:url(../images/edit-icon2.svg) no-repeat;
@@ -2048,8 +2043,8 @@ h3.font-style1{
 	background-position:0px -22px;
 }
 .profile-page .link-icons-group {
-	margin: 0px 15px 0px;
-	text-align:right;
+	margin: 10px 0;
+	text-align: center;
 }
 /*************************************************************/
 /*	Edit Profile page
