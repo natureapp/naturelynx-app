@@ -951,6 +951,7 @@ ul.list li:first-child a.list{
 }
 .upload-sec{
 	position: relative;
+	height: 100%;
 }
 .sighting-edit .main-photo{
 	width: 100%;
@@ -969,7 +970,7 @@ ul.list li:first-child a.list{
 .helpme-btn:hover, .helpme-btn:focus{
 	color: #fff;
 }
-.drop-area{
+.sighting-edit .drop-area{
   background-color:#E6E6E6;
   background-image: url(../images/add.svg);
   background-repeat: no-repeat;
@@ -980,17 +981,17 @@ ul.list li:first-child a.list{
   position: relative;
   overflow: hidden;
 }
-.drop-area input {
+.sighting-edit .drop-area input {
     display: block !important;
     width: 100% !important;
     height: 100% !important;
     opacity: 0 !important;
     overflow: hidden !important;
 }
-.MultiFile-title{
+.sighting-edit .MultiFile-title{
 	display: none;
 }
-.MultiFile-label{
+.sighting-edit .MultiFile-label{
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -999,19 +1000,19 @@ ul.list li:first-child a.list{
 	height: 100%;
 	background:#191919;
 }
-.MultiFile-list.uploaded{
+.sighting-edit .MultiFile-list.uploaded{
 	display: block;
 }
-.MultiFile-wrap{
+.sighting-edit .MultiFile-wrap{
 	height: 100%;
 }
-.MultiFile-label img{
+.sighting-edit .MultiFile-label img{
 	  min-height: 100%;
   min-width: 100%;
   max-width: none;
   max-height: 100%
 }
-.MultiFile-remove{
+.sighting-edit .MultiFile-remove{
 	  position: absolute;
   z-index: 1;
   width: 100%;
@@ -1022,7 +1023,7 @@ ul.list li:first-child a.list{
   bottom: 0;
   text-indent: -9999px;
 }
-.MultiFile-remove:before{
+.sighting-edit .MultiFile-remove:before{
 	content: '';
 	background: url(../images/close-icon.svg) no-repeat;
 	background-position: center center;
@@ -1033,7 +1034,7 @@ ul.list li:first-child a.list{
 	height: 100%;
 }
 .btn-dark{
-	background: #373844;
+	background: #1F1F27;
   font-size: 10px;
   width: 100%;
   padding: 10px;
@@ -1045,6 +1046,14 @@ ul.list li:first-child a.list{
 }
 .btn-dark:hover, .btn-dark:focus{
 	color: #fff;
+}
+label{
+	color: #262926;
+	font-size: 10px;
+	font-family: 'ralewayregular';
+	text-align: center;
+	display: block;
+	margin: 5px auto 0px;
 }
 /*************************************************************/
 /*	Capture
@@ -1292,17 +1301,17 @@ textarea{
 }
 
 .switch-label {
-  position: relative;
-  z-index: 2;
-  float: left;
-  width: 50%;
-  font-size: 11px;
-  color: #292934;
-  text-align: center;
-  cursor: pointer;
-  margin-bottom: 0px;
-padding: 10px 0px;
-font-weight:normal;
+	position: relative;
+	z-index: 2;
+	float: left;
+	width: 50%;
+	font-size: 11px;
+	color: #292934;
+	text-align: center;
+	cursor: pointer;
+	margin: 0;
+	padding: 10px 0px;
+	font-weight:normal;
 }
 .switch-input {
   display: none;
@@ -1347,6 +1356,7 @@ font-weight:normal;
 	background:#ffffff;
 	font-family: 'ralewayregular';
 	letter-spacing:1px;
+	text-transform: uppercase;
 }
 .line-style-btn:focus{
 	border:1px solid #292934;
@@ -1459,7 +1469,87 @@ font-weight:normal;
 .species-group{
 	background:#1f1f28;
 }
-
+/*************************************************************/
+/*	Create Mission
+/*************************************************************/
+.create-mission h4{
+	text-align: center;
+}
+.edit-banner{
+	width: 150px;
+	height: 60px;
+	background: #E6E6E6;
+	margin-left: auto;
+	margin-right: auto;
+}
+.edit-banner img{
+	width: 100%;
+	height: auto;
+}
+.edit-banner .drop-area{
+  background-color:#E6E6E6;
+  background-image: url(../images/add.svg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 9px auto; 
+  text-align: center;
+  cursor:pointer;
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+}
+.edit-banner .drop-area input {
+    display: block !important;
+    width: 100% !important;
+    height: 100% !important;
+    opacity: 0 !important;
+    overflow: hidden !important;
+}
+.edit-banner .MultiFile-title{
+	display: none;
+}
+.edit-banner .MultiFile-label{
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+	background:#191919;
+}
+.edit-banner .MultiFile-list.uploaded{
+	display: block;
+}
+.edit-banner .MultiFile-wrap{
+	height: 100%;
+}
+.edit-banner .MultiFile-label img{
+	  min-height: 100%;
+  min-width: 100%;
+  max-width: none;
+  max-height: 100%
+}
+.edit-banner .MultiFile-remove{
+	  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  text-indent: -9999px;
+}
+.edit-banner .MultiFile-remove:before{
+	content: '';
+	background: url(../images/close-icon.svg) no-repeat;
+	background-position: center center;
+	background-size: 8px auto;
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 100%;
+}
 /*************************************************************/
 /*	Create Group
 /*************************************************************/

@@ -83,8 +83,8 @@ jQuery(document).ready(function($) {
 	});
 	
 	//Set height - Image upload Drop area 
-	var dropW = jQuery(".drop-area").width();
-	jQuery(".drop-area").css("height",dropW);
+	var dropW = jQuery(".sighting-edit .drop-area").width();
+	jQuery(".sighting-edit .drop-area").css("height",dropW);
          
           
 	//Capture area width and height
