@@ -1311,7 +1311,7 @@ textarea{
 	color: #292934;
 	text-align: center;
 	cursor: pointer;
-	margin: 0;
+	margin: 0 !important;
 	padding: 10px 0px;
 	font-weight:normal;
 }
@@ -2043,7 +2043,7 @@ h3.font-style1{
 	background-position:0px -22px;
 }
 .profile-page .link-icons-group {
-	margin: 10px 0;
+	margin: 10px 0 0px;
 	text-align: center;
 }
 /*************************************************************/
@@ -2062,10 +2062,10 @@ h3.font-style1{
 	padding: 7px 15px 6px;
 	display: block;
 	text-align: left;
-	font-family: 'ralewaysemibold';
 	text-transform:uppercase;
 	font-size:12px;
 	display: inline-block;
+	font-family: 'ralewayregular';
 	width: 100%;
 	line-height: 25px;
 }
@@ -2079,7 +2079,7 @@ h3.font-style1{
 .edit-profile-page .push-btn-label{
 	padding: 11px 15px 6px;
 	text-align: left;
-	font-family: 'ralewaysemibold';
+	font-family: 'ralewayregular';
 	text-transform:uppercase;
 	font-size:12px;
 	float: left;
@@ -2089,6 +2089,9 @@ h3.font-style1{
 }
 .push-notifications{
 	border-top: 1px solid #AEAEAE;
+	display: table;
+	width: 100%;
+
 }
 .edit-profile-page .form input, .edit-profile-page  .form .group-select-btn, .edit-profile-page .form textarea{
 	text-transform:none;

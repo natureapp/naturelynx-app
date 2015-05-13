@@ -23,40 +23,44 @@
   <body class="top-menu-temp">
 
     <div class="app-nav">
-        <a href="tools.html" class="icons tools-icon selected"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a>
+        <a href="tools.html" class="icons tools-icon"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></a>
         <a class="icons search-btn" href="search.html"><img src="images/search-icon.svg" alt=""></a>
-        <a class="icons filter-btn" href="news-filter.html"><img src="images/filter-icon.svg" alt=""></a>
         <a class="navbar-brand" href="index.html"><img src="images/applogo.svg" alt="" class="applogo"></a>
     </div>
     <!--/.navigation -->
 	
     <!--Wrapper-->
     <div class="wrapper">
-        <!--Edit Profile-->
-        <div class="edit-profile-page">
-        	<h5 class="title-style1">OPTIONS:</h5>
-            <div class="full-block push-notifications">
-            <span class="push-btn-label">PUSH NOTIFICATIONS</span>
-            <div class="puch-btn">
-            <div class="switch">
-                              <input type="radio" class="switch-input" name="on-off" value="ON" id="ON" checked>
-                              <label for="ON" class="switch-label switch-label-off">ON</label>
-                              <input type="radio" class="switch-input" name="on-off" value="OFF" id="OFF">
-                              <label for="OFF" class="switch-label switch-label-on">OFF</label>
-                              <span class="switch-selection"></span>
-                        	</div></div>
-                    </div>
-        	<ul class="list-style">
-            	<li><a href="#">REPORT A PROBLEM</a></li>
-                <li><a href="#">SHARE SETTINGS</a></li>
-                <li><a href="#">CONTACT</a></li>
-            </ul>
-        </div>
+        <!--Profile page-->
+        <div class="profile-page">
+        	<div class="header-banner">
+            	<div class="profile-pic">
+                	<img src="images/profile-pic.png" alt="">
+                </div>
+            	<div class="banner-img">
+                	<img src="images/banner2.jpg" alt="">
+                </div>
+            </div>
+            <div class="individual-content">
+	            <div class="container">
+					<h4>Jane Doe</h4>
+	                <span class="status">“I love birds!”</span>
+	                <span class="area-range">Area Range</span>
+	            </div>
+	            <div class="bg-skyblue link-bar">
+	            	<a href="#" title="" class="white-linebtn">ADD TO MY LYNX</a>
+	            </div>
+                <ul class="liststyle1 mrg-top-15">
+                    <li><a href="group-list.html">GROUPS <span>(2)</span></a></li>
+                    <li><a href="mission-list.html">MISSIONS <span>(5)</span></a></li>
+                    <li><a href="mysightings.html">SIGHTINGS <span>(50)</span></a></li>
+                    <li><a href="my-lynx.html">LYNX <span>(100)</span></a></li>
+                </ul>
+            </div>
         	
+        </div>
            
-        <!--/.Edit Profile-->
-        
-        
+        <!--/.Profile Page-->
     </div>
     <!--/.Wrapper-->
     
@@ -66,11 +70,12 @@
         <a href="mysightings.html" class="mysightings-btn">My Sightings</a>
         <a href="capture.html" class="capture-btn">Capture</a>
         <a href="discover.html" class="discover-btn">Discover</a>
-        <a href="profile.html" class="profile-btn">Profile</a>
+        <a href="profile.html" class="profile-btn selected">Profile</a>
     </div>
     <!--/.Bottom Menu-->
 
-   <!--JavaScript -->
+    <!--JavaScript -->
     <script src="js/script.js"></script>
+    
   </body>
 </html>
