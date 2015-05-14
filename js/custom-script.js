@@ -42,8 +42,8 @@ jQuery(document).ready(function($) {
 	jQuery(".photowrap a").css("height",photowrapW);
 	
 	//Set height - ightings-post
-	var gridW = jQuery(".sightings-list.grid-view .sightings-post").width();
-	jQuery(".sightings-list.grid-view .sightings-post").css("height",gridW);
+	/*var gridW = jQuery(".sightings-list.grid-view .sightings-post").width();
+	jQuery(".sightings-list.grid-view .sightings-post").css("height",gridW);*/
 	
 	
 	//searchpage
