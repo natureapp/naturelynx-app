@@ -634,7 +634,7 @@ input, select, textarea{
 	width: 100%;
 	z-index: 1000;
 	background: #fff;
-	padding: 5px 0px;
+	padding: 10px 0px;
 	border-top: 1px solid #F2F2F2;
 }
 .add-comment input.comment-box{
@@ -804,7 +804,7 @@ ul.list li:first-child a.list{
 /*************************************************************/
 /*	My Sightings
 /*************************************************************/
-.mysightings{
+.mysightings {
 	background:#181A16;
 }
 .mysightings .profile-name{
