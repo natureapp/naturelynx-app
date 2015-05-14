@@ -28,14 +28,14 @@ jQuery(document).ready(function($) {
 	var device_width = jQuery(window).width();
 	
 	//Landing footer position
-	var contentH = $(".landing-info").outerHeight();
+	/*var contentH = $(".landing-info").outerHeight();
 	var dialogH = $(".form-dialog").outerHeight();
   	if(contentH > "300px"){
 	  	$(".landingpage-footer").css({"position":"relative"});
   	}
   	if(dialogH > device_height) {
 	  	$(".landingpage-footer").css({"position":"relative"});
-  	}  	
+  	}  	*/
   	
   	//Set height - More photos
 	var photowrapW = jQuery(".photowrap").width();

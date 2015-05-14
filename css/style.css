@@ -95,7 +95,7 @@ input, select, textarea{
 	display: inline-block;
 	width: 100%;
 	background-attachment: fixed;
-	height: 100vh;
+
 }
 .landing-info{
 	background:rgba(0, 0, 0, 0.2);
@@ -157,7 +157,11 @@ input, select, textarea{
 .landingpage-footer a, landingpage-footer a:hover{
 	color: #fff;
 }
-
+@media(max-height:500px){
+	.landingpage-footer{
+		position: relative;
+	}
+}
 /*************************************************************/
 /*	Navigation
 /*************************************************************/
