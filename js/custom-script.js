@@ -30,7 +30,7 @@ jQuery(document).ready(function($) {
 	//Landing footer position
 	var contentH = $(".landing-info").outerHeight();
 	var dialogH = $(".form-dialog").outerHeight();
-  	if(contentH > device_height){
+  	if(contentH > "300px"){
 	  	$(".landingpage-footer").css({"position":"relative"});
   	}
   	if(dialogH > device_height) {
