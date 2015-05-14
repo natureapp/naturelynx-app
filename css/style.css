@@ -370,7 +370,7 @@ input, select, textarea{
 	float: left;
 }
 .profile-info .datetime{
-	flex:right;
+	float:right;
 	text-align:right;
 }
 .profile-info .datetime span{
