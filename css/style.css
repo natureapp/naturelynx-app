@@ -322,7 +322,7 @@ input, select, textarea{
 /*************************************************************/
 /*	Sign In / Sign Up
 /*************************************************************/
-.loginpage{
+body.loginpage, .loginpage{
 	background: #1f1f28;
 }
 .form-dialog{
