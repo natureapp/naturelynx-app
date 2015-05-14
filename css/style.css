@@ -322,12 +322,14 @@ input, select, textarea{
 /*************************************************************/
 /*	Sign In / Sign Up
 /*************************************************************/
-
+.loginpage{
+	background: #1f1f28;
+}
 .form-dialog{
 	padding: 10% 25px 0px;
 	text-align: center;
 	height: 100vh;
-	background: #1f1f28;
+	
 }
 .form-dialog .mainlogo{
 	margin-bottom: 50px;
