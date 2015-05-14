@@ -157,7 +157,7 @@ input, select, textarea{
 .landingpage-footer a, landingpage-footer a:hover{
 	color: #fff;
 }
-@media(max-height:500px){
+@media(max-height:400px){
 	.landingpage-footer{
 		position: relative;
 	}
@@ -328,7 +328,6 @@ input, select, textarea{
 .form-dialog{
 	padding: 10% 25px 0px;
 	text-align: center;
-	height: 100vh;
 	
 }
 .form-dialog .mainlogo{
