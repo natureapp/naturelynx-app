@@ -87,6 +87,13 @@ body{
 	font-family: 'ralewaylight';
 	font-size: 12px;
 }
+.landing-btn{
+	font-family: 'ralewayregular';
+	font-size: 13px;
+}
+.landing-info h1{
+	font-family: 'corbenregular';
+}
 .comment-username{
 	font-family: 'corbenregular';
 	font-size:14px;
@@ -117,21 +124,17 @@ body{
 	color:#ffffff;
 	font-size:50px;
 	margin-bottom:30px;
-	font-family: 'corbenregular';
 }
 .landing-info p{
 	color: #ffffff;
 	margin-bottom: 45px;
-	line-height: 17px;
 }
 .landing-btn{
 	color: #ffffff !important;
 	text-transform: uppercase !important;
-	font-size: 12px !important;
 	padding: 12px 35px !important;
 	display: inline-block;
 	margin: 0px 15px 25px;
-	font-family: 'ralewayregular';
 	letter-spacing: 1px;
 	width: auto !important;
 }
@@ -147,8 +150,6 @@ body{
 .landingpage-footer{
 	text-align:center;
 	color:#ffffff;
-	font-family: 'ralewaylight';
-	font-size:12px;
 	line-height:22px;
 	padding:20px 15px 10px;
 	position: absolute;
