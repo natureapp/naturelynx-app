@@ -252,15 +252,25 @@ jQuery(document).ready(function($) {
          $( this ).addClass( 'selected' );
 	});
 	
-	//Delete Member
-	$(".member").on( 'click', function() {
-		$(this).children(".delete").animate({
-			"right":"0px"
-			}, 100);
-	});
+	
 });
 
-
+//Delete Member
+$(document).on("pagecreate",".list-content",function(){
+  $(".member").on("swipeleft",function(){
+    //Delete Member
+	$(this).children(".delete").animate({
+			"right":"0px"
+			}, 100);
+	}); 
+ $(".member").on("swiperight",function(){
+    //Delete Member
+	$(this).children(".delete").animate({
+			"right":"-45px"
+			}, 100);
+	});                       
+});
+	
 //Search filter
 (function ($) {
   jQuery.expr[':'].Contains = function(a,i,m){
