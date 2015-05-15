@@ -161,12 +161,12 @@ body{
 	color: #fff;
 }
 .landingpage-footer strong{
-	font-family: 'ralewayregular';
+	font-family: 'ralewaybold';
 }
 .landingpage-footer a, landingpage-footer a:hover{
 	color: #fff;
 }
-@media(max-height:400px){
+@media(max-height:500px){
 	.landingpage-footer{
 		position: relative;
 	}
