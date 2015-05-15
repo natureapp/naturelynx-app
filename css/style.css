@@ -11,8 +11,10 @@
 /*************************************************************/
 body{
 	background:#fff;
-	color:#292934;
+	color:#262926;
 	height: 100vh;
+	font-family: 'ralewaylight';
+	font-size: 12px;
 }
 a, a:hover, a:focus, button{
 	outline:none;
@@ -26,9 +28,7 @@ input, input:focus, input:hover, textarea:focus, textarea:hover, select:focus, b
 	border:none;
 }
 p{
-	color: #323633;
-	font-family: 'ralewaylight';
-	font-size: 11px;
+
 }
 h4{
 	color: #1f1f28;
@@ -110,8 +110,6 @@ input, select, textarea{
 	font-family: 'corbenregular';
 }
 .landing-info p{
-	font-family: 'ralewaylight';
-	font-size: 11px;
 	color: #ffffff;
 	margin-bottom: 45px;
 	line-height: 17px;
@@ -239,7 +237,6 @@ input, select, textarea{
 }
 .header-social span{
 	font-family: 'open_sansregular';
-	font-size: 11px;
 	line-height: 39px;
 	margin-right: 8px;
 	letter-spacing: 1px;
@@ -374,9 +371,7 @@ body.loginpage, .loginpage{
 	text-align:right;
 }
 .profile-info .datetime span{
-	font-size:11px;
 	color:#1f1f28;
-	font-family: 'ralewaylight';
 	line-height:15px;
 	display: block;
 }
@@ -421,7 +416,6 @@ body.loginpage, .loginpage{
 	text-transform:uppercase;
 	font-size:9px;
 	color:#ffffff;
-	font-family: 'ralewaysemibold';
 	padding:6px 9px;
 	float:left;
 }
@@ -552,8 +546,6 @@ body.loginpage, .loginpage{
 	display: block;
 }
 .upload-info .city{
-	font-family: 'ralewaylight';
-	font-size:11px;
 	display: block;
 }
 .likes{
@@ -580,7 +572,6 @@ body.loginpage, .loginpage{
 	padding-left:25px;
 	background-size:17px auto;
 	color:#1f1f28;
-	font-size:11px;
 }
 .like-btn{
 	background:url(../images/logo-gray.svg) no-repeat left center;	
@@ -596,7 +587,6 @@ body.loginpage, .loginpage{
 .total-comments a{
 	color:#1f1f28;
 	font-family: 'ralewaybold';
-	font-size: 11px;
 }
 
 /*************************************************************/
@@ -620,9 +610,7 @@ body.loginpage, .loginpage{
 	display:block;
 }
 .comment-text{
-	color:#323633;
-	font-family: 'ralewaylight';
-	font-size:11px;
+	
 }
 .add-comment{
 	padding: 20px 0px 0px;
@@ -644,7 +632,6 @@ body.loginpage, .loginpage{
 }
 .add-comment input.comment-box{
 	color: #292934;
-	font-size: 11px;
 	padding: 6px 10px;
 	width:100%;
 	border-radius: 0;
@@ -665,7 +652,6 @@ body.loginpage, .loginpage{
 .filter-by-area{
 	font-size:12px;
 	text-transform:uppercase;
-	font-family: 'ralewaysemibold';
 }
 .filterby-title{
 	text-align:center;
@@ -801,7 +787,6 @@ a.list{
 	display: inline-block;
 	color: #1F1F27;
 	text-transform: uppercase;
-	font-size: 11px;
 }
 ul.list li:first-child a.list{
 	border-top: 1px solid #AEAEAE;
@@ -1144,7 +1129,6 @@ label{
 	color:#fff;
 	font-size:8px;
 	text-transform:uppercase;
-	font-family: 'ralewaybold';
 	text-align:center;
 	padding-top:29px;
 	height:44px;
@@ -1196,7 +1180,6 @@ label{
 	width: 100%;
 	text-align: center;
 	color: #fff;
-	font-size: 11px;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 }
@@ -1233,7 +1216,7 @@ label{
 }
 .form input, .form .group-select-btn, .form select, .form textarea{
 	color:#292934;
-	font-size:11px;
+	
 	width:100%;
 	padding:10px;
 	text-align:center;
@@ -1363,7 +1346,6 @@ textarea{
 	z-index: 2;
 	float: left;
 	width: 50%;
-	font-size: 11px;
 	color: #292934;
 	text-align: center;
 	cursor: pointer;
@@ -1429,7 +1411,6 @@ textarea{
 	color: #fff !important;
 	font-family: 'ralewayregular';
 	letter-spacing:1px;
-	font-size: 11px !important;
 }
 .bootstrap-timepicker-widget.timepicker-orient-bottom:before, .bootstrap-timepicker-widget.timepicker-orient-bottom:after,.datepicker:before, .datepicker:after{
 	display:none;
@@ -1462,7 +1443,6 @@ textarea{
 }
 .select-group-title{
 	color:#fff;
-	font-family: 'ralewaybold';
 	padding:35px 15px; 
 	text-align:center;
 	text-transform:uppercase;
@@ -1517,7 +1497,6 @@ textarea{
 	display: inline-block;
 	color: #1F1F27;
 	text-transform: uppercase;
-	font-size: 11px;
 	text-align: center;
 }
 .selection li.selected  a{
@@ -1643,7 +1622,6 @@ textarea{
 .create-group-title{
 	color:#4B4B4B;
 	margin: 0px;
-	font-family: 'ralewaybold';
 	padding: 25px 15px;
 	text-align: center;
 	text-transform: uppercase;
@@ -1654,9 +1632,6 @@ textarea{
 	font-family: 'ralewayregular';
 	font-size:10px;
 	margin-top:5px;
-}
-.info-txt strong{
-	font-family: 'ralewaysemibold';
 }
 .create-group hr{
 	margin:0px;
@@ -1797,7 +1772,6 @@ textarea{
 	display:block;
 }
 .font-style2{
-	font-family: 'ralewaybold';
 	font-size:18px;
 	display:block;
 }
@@ -1814,7 +1788,6 @@ h3.font-style1{
 }
 .link-style{
 	color:#539BBB;
-	font-family: 'ralewaysemibold';
 }
 .bottom-5{
 	margin-bottom:5px !important;
@@ -1849,8 +1822,6 @@ h3.font-style1{
 }
 .discover-group-header p{
 	font-family: 'ralewaylight';
-	font-size: 9px;
-	line-height: 11px;
 	text-align:center;
 	color: #fff;
 }
@@ -1891,7 +1862,6 @@ h3.font-style1{
 }
 .list-content .item-title{
 	color:#292934;
-	font-family: 'ralewaybold';
 	font-size:10px;
 	text-transform:uppercase;
 	margin: 0px 15px;
@@ -2054,7 +2024,6 @@ h3.font-style1{
 .area-range{
 	color:#1F1F28;
 	font-family: 'ralewayregular';
-	font-size:11px;
 	display:block;
 	text-align:center;
 }
@@ -2072,7 +2041,6 @@ h3.font-style1{
 	display: inline-block;
 	margin: 12px auto;
 	background: transparent;
-	font-family: 'ralewaybold';
 	letter-spacing:1px;
 }
 .group-links{
@@ -2103,7 +2071,6 @@ h3.font-style1{
 .liststyle1 li a{
 	text-transform:uppercase;
 	font-size:10px;
-	font-family: 'ralewaybold';
 	text-align:center;
 	padding:10px 15px;
 	border-top:1px solid #AEAEAE;
@@ -2159,7 +2126,6 @@ h3.font-style1{
 .title-style1{
 	color: #4B4B4B;
 	margin: 0px;
-	font-family: 'ralewaybold';
 	padding: 25px 15px;
 	text-align: center;
 	text-transform: uppercase;
@@ -2252,17 +2218,13 @@ h3.font-style1{
 .edit-img-sec a{
 	text-align:center;
 	color:#292934;
-	font-family: 'ralewaylight';
 	margin-top:10px;
-	font-size:11px;
 	display:block;
 }
 .edit-profile-page label{
 	text-align: center;
 	color: #292934;
-	font-family: 'ralewaylight';
 	margin:3px auto 5px;
-	font-size: 11px;
 	display: block;
 }
 /*************************************************************/
@@ -2281,11 +2243,9 @@ h3.font-style1{
 }
 .upadtes .total-notifications{
 	color: #BE0018;
-	font-size: 11px;
 	padding: 0px;
 	line-height: 10px;
 	width: 20px;
-	font-family: 'ralewaybold';
 }
 .list-style li.upadtes{
 	background: url(../images/alert-red.svg);
@@ -2294,7 +2254,7 @@ h3.font-style1{
 	background-position: right 20px bottom 5px;
 }
 .list-style li.upadtes a{
-	padding: 7px 5px 6px 10px;
+	padding: 7px 5px 6px 15px;
 }
 .list-style{
 	margin:0;
@@ -2356,8 +2316,6 @@ h3.font-style1{
 	max-width: 100%;
 }
 .notification-txt{
-	font-family: 'ralewaylight';
-	font-size:11px;
 	color:#292934;
 	padding:8px 0px 8px 10px;
 }
@@ -2385,7 +2343,7 @@ h3.font-style1{
 	vertical-align: middle;
 }
 .bold-caps{
-	font-family: 'ralewaybold';;
+	font-family: 'ralewaybold';
 	text-transform:uppercase;
 }
 .notification-txt .bold-caps{
@@ -2430,8 +2388,6 @@ h3.font-style1{
 	display: table;
 	width: 100%;
 	color:#fff;
-	font-family: 'ralewayregular';
-	font-size:11px;
 }
 .search-box{
 	background:#1f1f28;
@@ -2498,61 +2454,61 @@ input.search-box::-webkit-input-placeholder {
 }
 }
 @media (max-width:992px) and (min-width:600px){
-	.sightings-list.grid-view .sightings-post{
-	height:250px;
-}
-.grid-view .sightings-post .sighting-img{
-	min-height: 250px;
-	max-height:350px;
-}
+		.sightings-list.grid-view .sightings-post{
+		height:250px;
+	}
+	.grid-view .sightings-post .sighting-img{
+		min-height: 250px;
+		max-height:350px;
+	}
 }
 @media (max-width:600px){
-.landing-info h1{
-	font-size:45px;
-}
+	.landing-info h1{
+		font-size:45px;
+	}
 
 }
 
 @media (max-width:480px){
-.landing-info h1{
-	font-size:40px;
-}
-.landing-btn {
-	margin: 0px 7px 25px;
-}
-.filter-type {
-	margin-left: 35%;
-}
+	.landing-info h1{
+		font-size:40px;
+	}
+	.landing-btn {
+		margin: 0px 7px 25px;
+	}
+	.filter-type {
+		margin-left: 35%;
+	}
 }
 
 @media (max-width:380px){
-.landing-info {
-	padding: 50px 10px 30px;
-}
-.landing-info h1{
-	font-size:30px;
-}
+	.landing-info {
+		padding: 50px 10px 30px;
+	}
+	.landing-info h1{
+		font-size:30px;
+	}
 }
 @media (max-width:320px){
-	.landing-btn {
-	padding: 12px 25px;
-}
+		.landing-btn {
+		padding: 12px 25px;
+	}
 }
 @media (max-width:374px){
-.fb-share, .tw-share {
-	font-size: 8px;
-}
-.capture-share{
-	font-size: 10px;
-}
+	.fb-share, .tw-share {
+		font-size: 8px;
+	}
+	.capture-share{
+		font-size: 10px;
+	}
 }
 @media (min-width:375px){
-.fb-share, .tw-share {
-	font-size: 10px;
-}
-.capture-share{
-	font-size: 11px;
-}
+	.fb-share, .tw-share {
+		font-size: 10px;
+	}
+	.capture-share{
+		font-size: 11px;
+	}
 }
 @media (min-width:414px){
 .fb-share, .tw-share {
