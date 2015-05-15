@@ -1371,6 +1371,9 @@ textarea{
 	padding: 10px 0px;
 	font-weight:normal;
 }
+.switch-label.ui-radio-on{
+	color: #fff;
+	}
 .switch-input {
   display: none;
 }

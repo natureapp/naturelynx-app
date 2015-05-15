@@ -256,19 +256,23 @@ jQuery(document).ready(function($) {
 });
 
 //Delete Member
-$(document).on("pagecreate",".list-content",function(){
-  $(".member").on("swipeleft",function(){
-    //Delete Member
-	$(this).children(".delete").animate({
-			"right":"0px"
-			}, 100);
-	}); 
- $(".member").on("swiperight",function(){
-    //Delete Member
-	$(this).children(".delete").animate({
-			"right":"-45px"
-			}, 100);
-	});                       
+$('div[data-role*="page"]').each(function(i) {
+  	document.write('<script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>');
+	$(document).on("pagecreate",".list-content",function(){
+		
+	  $(".member").on("swipeleft",function(){
+	    //Delete Member
+		$(this).children(".delete").animate({
+				"right":"0px"
+				}, 100);
+		}); 
+	 $(".member").on("swiperight",function(){
+	    //Delete Member
+		$(this).children(".delete").animate({
+				"right":"-45px"
+				}, 100);
+		});                       
+	});
 });
 	
 //Search filter
