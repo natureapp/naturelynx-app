@@ -87,6 +87,7 @@ body{
 	font-family: 'ralewaylight';
 	font-size: 12px;
 }
+
 .landing-btn{
 	font-family: 'ralewayregular';
 	font-size: 13px;
@@ -94,9 +95,12 @@ body{
 .landing-info h1{
 	font-family: 'corbenregular';
 }
-.comment-username{
+.comment-username, .profile-name{
 	font-family: 'corbenregular';
 	font-size:14px;
+}
+.landingpage-footer strong, .profile-info .datetime span strong{
+	font-family: 'ralewaymedium';
 }
 /*************************************************************/
 /*	Landing Page
@@ -159,9 +163,6 @@ body{
 .landingpage-footer p{
 	margin-bottom: 0px;
 	color: #fff;
-}
-.landingpage-footer strong{
-	font-family: 'ralewaymedium';
 }
 .landingpage-footer a, landingpage-footer a:hover{
 	color: #fff;
@@ -373,7 +374,6 @@ body.loginpage, .loginpage{
 }
 .profile-name{
 	color:#1f1f28;
-	font-size: 13px;
 	margin:8px 15px;
 	float: left;
 }
@@ -386,9 +386,7 @@ body.loginpage, .loginpage{
 	line-height:15px;
 	display: block;
 }
-.profile-info .datetime span strong{
-	font-family: 'ralewaybold';
-}
+
 .media-photo{
 	position:relative;
 	overflow: hidden;
