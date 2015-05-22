@@ -83,17 +83,18 @@ body{
 	font-family: 'ralewaylight';
 	font-size: 12px;
 }
+
 h4{
 	color: #1f1f28;
 }
-.landing-btn{
+.landing-btn, .likes, .filter-by-area, .white-btn, .line-btn, .info-txt, .discover-page p{
 	font-family: 'ralewayregular';
 	font-size: 13px;
 }
 .landing-info h1{
 	font-family: 'corbenregular';
 }
-h4, .comment-username, .profile-name, .upload-info .name{
+h4, .comment-username, .profile-name, .upload-info .name, .filterby-title{
 	font-family: 'corbenregular';
 	font-size:14px;
 }
@@ -557,8 +558,6 @@ body.loginpage, .loginpage{
 	background:url(../images/logo-light.svg) no-repeat;
 	background-position:left center;
 	background-size:17px auto;
-	font-size:14px;
-	font-family: 'ralewayregular';
 	padding:13px 10px 13px 24px;
 	color:#fff;
 	position:absolute;
@@ -653,7 +652,6 @@ body.loginpage, .loginpage{
 /*	Filter By
 /*************************************************************/
 .filter-by-area{
-	font-size:12px;
 	text-transform:uppercase;
 }
 .filterby-title{
@@ -661,8 +659,6 @@ body.loginpage, .loginpage{
 	color:#4B4B4B;
 	padding:21px 10px 16px 10px;
 	text-transform: capitalize;
-	font-family: 'corbenregular';
-	font-size: 13px;
 }
 .filter-type {
 	display: inline-block;
@@ -923,9 +919,7 @@ ul.list li:first-child a.list{
 	background: #fff;
 	color: #1F1F28;
 	text-transform: uppercase !important;
-	font-size: 12px !important;
 	padding:5px 10px 3px !important;
-	font-family: 'ralewayregular';
 	letter-spacing: 1px;
 	width: 86px;
 	text-align: center;
@@ -972,9 +966,7 @@ ul.list li:first-child a.list{
 	border: 1px solid #fff;
 	color: #ffffff;
 	text-transform: uppercase !important;
-	font-size: 12px !important;
 	padding: 5px 10px 3px !important;
-	font-family: 'ralewayregular';
 	letter-spacing: 1px;
 	text-align: center;
 	
@@ -1632,8 +1624,6 @@ textarea{
 }
 .info-txt{
 	text-align:center;
-	font-family: 'ralewayregular';
-	font-size:10px;
 	margin-top:5px;
 }
 .create-group hr{
@@ -1666,9 +1656,7 @@ textarea{
 	margin-bottom:12px;
 }
 .discover-page p{
-	font-family: 'ralewayregular';
 	font-size:9px;
-	line-height:11px;
 	color:#fff;
 	margin-bottom:23px;
 }
