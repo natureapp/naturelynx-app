@@ -504,7 +504,7 @@ body.loginpage, .loginpage{
 }
 .newsfeed-status .status-icon{
 	text-align:center;
-	padding:5px 10px;
+	padding:7px 10px;
 	position:absolute;
 }
 .newsfeed-status .status-icon.verified-icon, .newsfeed-status .status-icon.pending-icon, .newsfeed-status .status-icon.unknown-icon, .newsfeed-status .status-icon.hidden-icon{
