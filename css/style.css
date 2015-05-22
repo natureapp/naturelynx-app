@@ -28,11 +28,7 @@ input, input:focus, input:hover, textarea:focus, textarea:hover, select:focus, b
 p{
 
 }
-h4{
-	color: #1f1f28;
-	font-size: 13px;
-	font-family: 'corbenregular';
-}
+
 .top-menu-temp{
 	padding-top:44px;
 }
@@ -87,7 +83,9 @@ body{
 	font-family: 'ralewaylight';
 	font-size: 12px;
 }
-
+h4{
+	color: #1f1f28;
+}
 .landing-btn{
 	font-family: 'ralewayregular';
 	font-size: 13px;
@@ -95,7 +93,7 @@ body{
 .landing-info h1{
 	font-family: 'corbenregular';
 }
-.comment-username, .profile-name{
+h4, .comment-username, .profile-name, .upload-info .name{
 	font-family: 'corbenregular';
 	font-size:14px;
 }
@@ -550,8 +548,6 @@ body.loginpage, .loginpage{
 	padding: 6px 70px;
 }
 .upload-info .name{
-	font-size: 14px;
-	font-family: 'corbenregular';
 	display: block;
 }
 .upload-info .city{
